@@ -1,0 +1,94 @@
+{{ define "main" }}
+<article class="max-w-full">
+	<div class="row">
+		<div class="contact-column-left">
+			<header>
+				<h1
+					class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral animated-text"
+				>
+					{{ .Title | emojify }}
+				</h1>
+			</header>
+			<section class="max-w-full mt-6 prose dark:prose-invert">
+				{{ .Content }}
+			</section>
+		</div>
+		<div class="contact-column-divider">
+			<div class="contact-column-dividing-line"></div>
+		</div>
+		<div class="contact-column-right">
+			<div id="form-container">
+				<form
+					id="contact"
+					name="contact"
+					class="contact-form width-normal"
+					action="/thank-you/"
+					method="POST"
+					data-netlify="true"
+				>
+					<input type="hidden" name="form-name" value="contact" />
+					<div class="form-group animated-text">
+						<label class="col-md-12 control-label" for="Name"></label>
+						<input
+							id="contact-form-name"
+							name="Name"
+							type="text"
+							placeholder="What's your name?"
+							class="form-control input-lg"
+							required=""
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group animated-text">
+						<label class="col-md-12 control-label" for="Email"></label>
+						<input
+							id="contact-form-email"
+							name="Email"
+							type="email"
+							placeholder="What's your email address"
+							class="form-control input-md"
+							required="true"
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group animated-text">
+						<label class="col-md-12 control-label" for="Subject"></label>
+						<input
+							id="contact-form-subject"
+							name="Subject"
+							type="text"
+							placeholder="What do you want to discuss?"
+							class="form-control input-md"
+							required=""
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group animated-text">
+						<label class="col-md-12 control-label" for=""></label>
+						<textarea
+							class="form-control"
+							id="contact-form-message"
+							name="Message"
+							placeholder="Tell me more"
+							rows="8"
+						></textarea>
+					</div>
+					<div class="form-group animated-text">
+						<button
+							role="button"
+							href="#"
+							type="submit"
+							value="Submit"
+							class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500 dark:bg-primary-800 dark:hover:!bg-primary-700"
+							id="Form-submit"
+						>
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer class="pt-8">{{ partial "sharing-links.html" . }}</footer>
+	</div>
+</article>
+{{ end }}

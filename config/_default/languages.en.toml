@@ -1,0 +1,15 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Joshua Van Arsdale"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+author = { image = "DSC_16112c.jpg", name = "Joshua Van Arsdale", links = [ { github = "https://github.com/josh-va" }, { linkedin = "https://www.linkedin.com/in/jvanarsdale/" } ] , headline = "IT Solutions Specialist<br>Streamlined Tech | Empowered Teams | Secured Solutions" }
+description = "Joshua Van Arsdale | IT Systems Specialist"
+logo = "name-logo-onlight.svg"
+secondaryLogo = "name-logo-ondark.svg"

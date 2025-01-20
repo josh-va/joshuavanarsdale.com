@@ -1,0 +1,17 @@
+[[main]]
+none = "none"
+
+[[main]]
+name = "Resume"
+pageRef = "resume"
+identifier = "AlDb3FSBlF"
+weight = 1
+
+[[main]]
+name = "Contact"
+pageRef = "contact"
+identifier = "pweiP3R1De"
+weight = 2
+
+[[footer]]
+none = "none"
