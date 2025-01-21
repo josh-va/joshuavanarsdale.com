@@ -2,8 +2,8 @@
 none = "none"
 
 [[main]]
-name = "Resume"
-pageRef = "resume"
+name = "Career Journey"
+pageRef = "career-journey"
 identifier = "AlDb3FSBlF"
 weight = 1
 
