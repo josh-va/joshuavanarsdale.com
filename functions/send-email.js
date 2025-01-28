@@ -26,7 +26,7 @@ export async function onRequestPost({ request, env }) {
 
         // Handle the response
         if (response.ok) {
-            return Response.redirect("/thank-you/", 302);
+            return Response.redirect(new URL("/thank-you/", request.url), 302);
         } else {
             const error = await response.text();
             return new Response(`Failed to send email: ${error}`, { status: 500 });
