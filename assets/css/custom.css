@@ -17,6 +17,11 @@ html {
 	font-weight: 300;
 }
 
+.blurry {
+	backdrop-filter: blur(10px);
+}
+
+
 .text-4xl {
 	font-size: 3rem;
 	line-height: 3.5rem;
