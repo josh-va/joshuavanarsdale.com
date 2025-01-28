@@ -1,0 +1,54 @@
+{{ define "main" }}
+<script>
+	function showMore(num, expand) {
+		var moreId = "more" + num;
+		var expandLinkId = "expandLink" + num;
+		var collapseLinkId = "collapseLink" + num;
+		if (expand) {
+			if (
+				document
+					.getElementById(expandLinkId)
+					.classList.contains("resume-animate-showmore")
+			) {
+				document
+					.getElementById(expandLinkId)
+					.classList.remove("resume-animate-showmore");
+			}
+			document.getElementById(expandLinkId).style.display = "none";
+			document.getElementById(collapseLinkId).style.display = "inline";
+			document.getElementById(moreId).style.display = "block";
+			document.getElementById(moreId).classList.remove("resume-animate-out");
+			document.getElementById(moreId).classList.add("resume-animate-in");
+		} else {
+			function transitionEnd() {
+				console.log("end");
+				document.getElementById(moreId).style.display = "none";
+				document.getElementById(collapseLinkId).style.display = "none";
+				document.getElementById(expandLinkId).style.display = "inline";
+				document
+					.getElementById(moreId)
+					.removeEventListener("animationend", transitionEnd);
+			}
+			document
+				.getElementById(moreId)
+				.addEventListener("animationend", transitionEnd);
+
+			document.getElementById(moreId).classList.remove("resume-animate-in");
+			document.getElementById(moreId).classList.add("resume-animate-out");
+		}
+	}
+</script>
+
+<article class="max-w-full">
+	<header>
+		{{ if .Params.showBreadcrumbs | default
+		(.Site.Params.article.showBreadcrumbs | default false) }} {{ partial
+		"breadcrumbs.html" . }} {{ end }}
+		<h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+			{{ .Title | emojify }}
+		</h1>
+	</header>
+	<section class="max-w-full prose dark:prose-invert">{{ .Content }}</section>
+	<footer class="pt-8">{{ partial "sharing-links.html" . }}</footer>
+</article>
+{{ end }}
