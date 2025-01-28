@@ -1,3 +1,29 @@
+@font-face {
+	font-family: zenLoop;
+	src: url('/fonts/ZenLoop-Regular.ttf');
+}
+
+@font-face {
+	font-family: openSans;
+	src: url('/fonts/OpenSans-VariableFont_wdth,wght.ttf');
+}
+
+h1 {
+	font-family: zenLoop;
+}
+
+html {
+	font-family: openSans;
+	font-weight: 300;
+}
+
+.text-4xl {
+	font-size: 3rem;
+	line-height: 3.5rem;
+	letter-spacing: 0.1rem;
+}
+
+
 #form-container {
 	justify-content: center;
 	align-items: start;
@@ -181,6 +207,18 @@ textarea.form-control {
 	}
 }
 
+@keyframes fadeInBullet {
+	from {
+		opacity: 0;
+		transform: translateX(5px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 @keyframes fadeOutSide {
 	from {
 		opacity: 1;
@@ -195,16 +233,41 @@ textarea.form-control {
 	}
 }
 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .resume-animate-in {
-	animation: fadeInSide 0.3s ease-in forwards;
+	animation: fadeInSide 0.5s ease-in-out forwards;
 }
 
 .resume-animate-out {
-	animation: fadeOutSide 0.3s ease-out forwards;
+	animation: fadeOutSide 0.5s ease-in-out forwards;
 }
 
 .resume-animate-hidden {
 	opacity: 0;
+}
+
+.resume-animate-point {
+	opacity: 0;
+	animation: fadeInBullet 0.3s ease-in var(--delay, 0ms) forwards;
+}
+
+.resume-animated-list>* {
+	opacity: 0;
+	animation: fadeInBullet 0.3s ease-in var(--delay, 0ms) forwards;
+}
+
+.resume-animate-showmore {
+	opacity: 0;
+	animation: fadeIn 0.3s ease-in var(--delay, 0ms) forwards;
 }
 
 .max-w-full {
@@ -226,22 +289,13 @@ textarea.form-control {
 }
 
 #contentContainer a {
-	display: inline;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	margin-top: 5px;
-	padding-left: 10px;
-	text-align: right;
+	text-align: center;
+	padding-bottom: 8px;
 }
 
 ul {
 	padding-top: 10px;
 	list-style-position: inside;
-}
-
-ul>li::marker {
-	color: green;
 }
 
 .prose {
