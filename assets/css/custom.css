@@ -144,6 +144,9 @@ textarea.form-control {
 .large-thankyou-emoji {
 	font-size: 10rem;
 	margin: 0;
+	width: fit-content;
+	height: fit-content;
+
 }
 
 .contact-column-dividing-line {

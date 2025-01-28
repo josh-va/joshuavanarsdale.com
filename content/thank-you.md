@@ -5,7 +5,9 @@ layout: thank-you
 ---
 
 <p class="large-thankyou-emoji">🎉<p>
-
+<div style="">
 {{< lead >}} Your message has been sent through to me.
 
 I'll be in touch soon! {{< /lead >}}
+
+</div>
