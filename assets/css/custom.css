@@ -141,14 +141,6 @@ textarea.form-control {
 	font-size: 1.1rem;
 }
 
-.centred-thankyou-message {
-	display: flex;
-	height: 50vh;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
 .large-thankyou-emoji {
 	font-size: 10rem;
 	margin: 0;
@@ -170,26 +162,6 @@ textarea.form-control {
 
 .opacity-80 {
 	opacity: 0.8;
-}
-
-.w12rem {
-	width: 12rem;
-}
-
-.h12rem {
-	height: 12rem;
-}
-
-@keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
 }
 
 .animated-text {
@@ -234,29 +206,25 @@ textarea.form-control {
 	}
 }
 
-.resume-animate-in {
+.slow-slide-in-animation {
 	animation: fadeInSide 0.5s ease-in-out forwards;
 }
 
-.resume-animate-out {
+.slow-slide-out-animation {
 	animation: fadeOutSide 0.5s ease-in-out forwards;
 }
 
-.resume-animate-hidden {
-	opacity: 0;
-}
-
-.resume-animate-point {
+.quick-slide-across-in-animation {
 	opacity: 0;
 	animation: fadeInSide 0.3s ease-in var(--delay, 0ms) forwards;
 }
 
-.resume-animated-list>* {
+.slide-in-list-animation>* {
 	opacity: 0;
 	animation: fadeInSide 0.3s ease-in var(--delay, 0ms) forwards;
 }
 
-.resume-animate-showmore {
+.quick-fade-in-animation {
 	opacity: 0;
 	animation: fadeIn 0.3s ease-in var(--delay, 0ms) forwards;
 }
@@ -273,10 +241,6 @@ textarea.form-control {
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 100%;
-}
-
-#contentText {
-	padding-bottom: 10px;
 }
 
 #contentContainer a {

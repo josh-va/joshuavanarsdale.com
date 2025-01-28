@@ -8,18 +8,20 @@
 			if (
 				document
 					.getElementById(expandLinkId)
-					.classList.contains("resume-animate-showmore")
+					.classList.contains("quick-fade-in-animation")
 			) {
 				document
 					.getElementById(expandLinkId)
-					.classList.remove("resume-animate-showmore");
+					.classList.remove("quick-fade-in-animation");
 			}
 
 			document.getElementById(expandLinkId).style.display = "none";
 			document.getElementById(collapseLinkId).style.display = "inline";
 			document.getElementById(moreId).style.display = "block";
-			document.getElementById(moreId).classList.remove("resume-animate-out");
-			document.getElementById(moreId).classList.add("resume-animate-in");
+			document
+				.getElementById(moreId)
+				.classList.remove("slow-slide-out-animation");
+			document.getElementById(moreId).classList.add("slow-slide-in-animation");
 		} else {
 			function transitionEnd() {
 				console.log("end");
@@ -34,8 +36,10 @@
 				.getElementById(moreId)
 				.addEventListener("animationend", transitionEnd);
 
-			document.getElementById(moreId).classList.remove("resume-animate-in");
-			document.getElementById(moreId).classList.add("resume-animate-out");
+			document
+				.getElementById(moreId)
+				.classList.remove("slow-slide-in-animation");
+			document.getElementById(moreId).classList.add("slow-slide-out-animation");
 		}
 	}
 </script>
