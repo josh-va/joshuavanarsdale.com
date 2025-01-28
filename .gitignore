@@ -35,4 +35,3 @@ node_modules
 
 # Lock
 .hugo_build.lock
-themes/
