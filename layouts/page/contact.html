@@ -22,16 +22,15 @@
 					id="contact"
 					name="contact"
 					class="contact-form width-normal"
-					action="/thank-you/"
+					action="/send-email"
 					method="POST"
-					data-netlify="true"
 				>
 					<input type="hidden" name="form-name" value="contact" />
 					<div class="form-group animated-text">
 						<label class="col-md-12 control-label" for="Name"></label>
 						<input
-							id="contact-form-name"
-							name="Name"
+							id="name"
+							name="name"
 							type="text"
 							placeholder="What's your name?"
 							class="form-control input-lg"
@@ -42,8 +41,8 @@
 					<div class="form-group animated-text">
 						<label class="col-md-12 control-label" for="Email"></label>
 						<input
-							id="contact-form-email"
-							name="Email"
+							id="email"
+							name="email"
 							type="email"
 							placeholder="What's your email address"
 							class="form-control input-md"
@@ -54,8 +53,8 @@
 					<div class="form-group animated-text">
 						<label class="col-md-12 control-label" for="Subject"></label>
 						<input
-							id="contact-form-subject"
-							name="Subject"
+							id="subject"
+							name="subject"
 							type="text"
 							placeholder="What do you want to discuss?"
 							class="form-control input-md"
@@ -67,8 +66,8 @@
 						<label class="col-md-12 control-label" for=""></label>
 						<textarea
 							class="form-control"
-							id="contact-form-message"
-							name="Message"
+							id="message"
+							name="message"
 							placeholder="Tell me more"
 							rows="8"
 						></textarea>
