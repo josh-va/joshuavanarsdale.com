@@ -5,7 +5,6 @@ layout: career-journey
 ---
 
 {{< timeline >}}
-
 {{< animatedTimelineItem icon="location-dot" header="Independent Technology Consultant" badge="Feb '23 - Sept '24" subheader="Self-Employed | Sydney, NSW, Australia" animationClass="resume-animate-point" animationDelay=0 >}}
 
 <ul class="resume-animated-list">
@@ -33,7 +32,6 @@ layout: career-journey
 </div>
 
 {{< /animatedTimelineItem >}}
-
 {{< animatedTimelineItem icon="location-dot" header="Internal IT & Quality Assurance Administrator" badge="Jan '19 - Nov '22" subheader="ClickView | Pyrmont, NSW, Australia" animationClass="resume-animate-point" animationDelay=350 >}}
 
 <ul class="resume-animated-list">
