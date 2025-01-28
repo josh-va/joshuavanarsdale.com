@@ -20,8 +20,8 @@
 			document.getElementById(moreId).style.display = "block";
 			document
 				.getElementById(moreId)
-				.classList.remove("slow-slide-out-animation");
-			document.getElementById(moreId).classList.add("slow-slide-in-animation");
+				.classList.remove("slow-wipe-out-animation");
+			document.getElementById(moreId).classList.add("slow-wipe-in-animation");
 		} else {
 			function transitionEnd() {
 				console.log("end");
@@ -38,8 +38,8 @@
 
 			document
 				.getElementById(moreId)
-				.classList.remove("slow-slide-in-animation");
-			document.getElementById(moreId).classList.add("slow-slide-out-animation");
+				.classList.remove("slow-wipe-in-animation");
+			document.getElementById(moreId).classList.add("slow-wipe-out-animation");
 		}
 	}
 </script>

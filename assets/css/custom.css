@@ -171,7 +171,7 @@ textarea.form-control {
 	animation: fadeInSide 0.3s ease-in forwards;
 }
 
-@keyframes fadeInSide {
+@keyframes fadeInSideWithWipe {
 	from {
 		opacity: 0;
 		transform: translateX(5px);
@@ -185,7 +185,7 @@ textarea.form-control {
 	}
 }
 
-@keyframes fadeOutSide {
+@keyframes fadeOutSideWithWipe {
 	from {
 		opacity: 1;
 		transform: translateX(0px);
@@ -194,8 +194,20 @@ textarea.form-control {
 
 	to {
 		opacity: 0;
-		transform: translateX(10px);
+		transform: translateX(5px);
 		max-height: 0px;
+	}
+}
+
+@keyframes fadeInSide {
+	from {
+		opacity: 0;
+		transform: translateX(5px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 
@@ -209,12 +221,12 @@ textarea.form-control {
 	}
 }
 
-.slow-slide-in-animation {
-	animation: fadeInSide 0.5s ease-in-out forwards;
+.slow-wipe-in-animation {
+	animation: fadeInSideWithWipe 0.5s ease-in-out forwards;
 }
 
-.slow-slide-out-animation {
-	animation: fadeOutSide 0.5s ease-in-out forwards;
+.slow-wipe-out-animation {
+	animation: fadeOutSideWithWipe 0.5s ease-in-out forwards;
 }
 
 .quick-slide-across-in-animation {
