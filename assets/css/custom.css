@@ -135,7 +135,6 @@ textarea.form-control {
 
 .contact-body {
 	display: flex;
-	height: 100%;
 	justify-content: center;
 	align-items: start;
 	flex-direction: column;
@@ -194,14 +193,13 @@ textarea.form-control {
 }
 
 .animated-text {
-	opacity: 0;
-	animation: fadeInUp 1s ease-out forwards;
+	animation: fadeInSide 0.3s ease-in forwards;
 }
 
 @keyframes fadeInSide {
 	from {
 		opacity: 0;
-		transform: translateX(10px);
+		transform: translateX(5px);
 		max-height: 0px;
 	}
 
@@ -209,18 +207,6 @@ textarea.form-control {
 		opacity: 1;
 		transform: translateX(0);
 		max-height: 1000px;
-	}
-}
-
-@keyframes fadeInBullet {
-	from {
-		opacity: 0;
-		transform: translateX(5px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateX(0);
 	}
 }
 
@@ -262,12 +248,12 @@ textarea.form-control {
 
 .resume-animate-point {
 	opacity: 0;
-	animation: fadeInBullet 0.3s ease-in var(--delay, 0ms) forwards;
+	animation: fadeInSide 0.3s ease-in var(--delay, 0ms) forwards;
 }
 
 .resume-animated-list>* {
 	opacity: 0;
-	animation: fadeInBullet 0.3s ease-in var(--delay, 0ms) forwards;
+	animation: fadeInSide 0.3s ease-in var(--delay, 0ms) forwards;
 }
 
 .resume-animate-showmore {
