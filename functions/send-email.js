@@ -9,7 +9,7 @@ export async function onRequestPost({ request, env }) {
     // Mailgun API endpoint and parameters
     const mailgunUrl = `https://api.mailgun.net/v3/${env.MAILGUN_DOMAIN}/messages`;
     const params = new URLSearchParams();
-    params.append("from", `Your Name <you@${env.MAILGUN_DOMAIN}>`);
+    params.append("from", `joshuavanarsdale.com Contact Form <contactform@${env.MAILGUN_DOMAIN}>`);
     params.append("to", "josh@joshuavanarsdale.com");
     params.append("subject", subject);
     params.append("text", `From: ${name} <${email}>\n\nMessage: ${message}`);
