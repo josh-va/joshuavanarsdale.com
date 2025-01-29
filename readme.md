@@ -21,3 +21,4 @@ If you want to learn more lease reach out to me using my contact form at
 The code in this project is licensed under the MIT License.
 The content is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.
 For more details, see the [LICENSE](./LICENSE) and [content-license.md](./content-license.md) files.
+SVG icons are by [Font Awesome](https://fontawesome.com/) are are licensed under their [Font Awesome Free License](https://fontawesome.com/license/free).
