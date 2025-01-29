@@ -8,10 +8,16 @@ identifier = "AlDb3FSBlF"
 weight = 1
 
 [[main]]
+name = "Education"
+pageRef = "education"
+identifier = ""
+weight = 2
+
+[[main]]
 name = "Contact"
 pageRef = "contact"
 identifier = "pweiP3R1De"
-weight = 2
+weight = 3
 
 [[footer]]
 none = "none"
