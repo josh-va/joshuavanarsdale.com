@@ -26,8 +26,8 @@ layout: career-journey
 {{< keyword icon="code">}}IT Optimization{{< /keyword >}}
 {{< keyword icon="circle-info">}}Technical Documentation{{< /keyword >}}
 {{< keyword icon="heart">}}Client Relationship Building{{< /keyword >}}
-{{< keyword icon="suitcase">}}Business Administration{{< /keyword >}}
-{{< keyword icon="person">}}Sole Trader{{< /keyword >}}
+{{< keyword icon="briefcase">}}Business Administration{{< /keyword >}}
+{{< keyword icon="user">}}Sole Trader{{< /keyword >}}
 {{< /keywordList >}}
 </div>
 </div>
@@ -58,7 +58,7 @@ layout: career-journey
 {{< keyword icon="bug">}}Quality Assurance{{< /keyword >}}
 {{< keyword icon="layer-stack">}}SaaS Management{{< /keyword >}}
 {{< keyword icon="triangle-exclamation">}}Risk & Compliance{{< /keyword >}}
-{{< keyword icon="aws">}}AWS Infrastructure{{< /keyword >}}
+{{< keyword icon="cloud">}}AWS Infrastructure{{< /keyword >}}
 {{< keyword icon="server">}}Infrastructure Management{{< /keyword >}}
 {{< keyword icon="graduation-cap">}}Education Technology{{< /keyword >}}
 
@@ -88,11 +88,11 @@ layout: career-journey
 <div class="quick-fade-in-animation" style="--delay: 950ms">
 {{< keywordList >}}
 {{< keyword icon="cogs">}}Workflow Automation{{< /keyword >}}
-{{< keyword icon="padlock">}}Regulatory Compliance{{< /keyword >}}
+{{< keyword icon="scales">}}Regulatory Compliance{{< /keyword >}}
 {{< keyword icon="computer">}}Technical Support{{< /keyword >}}
 {{< keyword icon="cycle">}}ERP Systems{{< /keyword >}}
 {{< keyword icon="phone">}}Telephony{{< /keyword >}}
-{{< keyword icon="tools">}}Manufacturing Sector{{< /keyword >}}
+{{< keyword icon="industry">}}Manufacturing Sector{{< /keyword >}}
 {{< /keywordList >}}
 
 </div>
@@ -120,9 +120,9 @@ layout: career-journey
 <div class="quick-fade-in-animation" style="--delay: 1300ms">
 {{< keywordList >}}
 {{< keyword icon="computer">}}Technical Support{{< /keyword >}}
-{{< keyword icon="repeat-arrow">}}Backup & Recovery{{< /keyword >}}
+{{< keyword icon="repeat">}}Backup & Recovery{{< /keyword >}}
 {{< keyword icon="internet">}}Website Development{{< /keyword >}}
-{{< keyword icon="up-arrow">}}Workplace Modernization{{< /keyword >}}
+{{< keyword icon="up-right-dots">}}Workplace Modernization{{< /keyword >}}
 {{< keyword icon="people">}}Community Sector{{< /keyword >}}
 {{< /keywordList >}}
 </div>
