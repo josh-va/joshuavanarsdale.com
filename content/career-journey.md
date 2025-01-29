@@ -24,9 +24,10 @@ layout: career-journey
 {{< keywordList >}}
 {{< keyword icon="mug-hot">}}Project Management{{< /keyword >}}
 {{< keyword icon="code">}}IT Optimization{{< /keyword >}}
-{{< keyword icon="bug">}}Quality Assurance{{< /keyword >}}
 {{< keyword icon="circle-info">}}Technical Documentation{{< /keyword >}}
 {{< keyword icon="heart">}}Client Relationship Building{{< /keyword >}}
+{{< keyword icon="briefcase">}}Business Administration{{< /keyword >}}
+{{< keyword icon="user">}}Sole Trader{{< /keyword >}}
 {{< /keywordList >}}
 </div>
 </div>
@@ -53,12 +54,16 @@ layout: career-journey
 
 <div class="quick-fade-in-animation" style="--delay: 600ms">
 {{< keywordList >}}
-{{< keyword icon="lightbulb">}}IT Governance{{< /keyword >}}
-{{< keyword icon="mug-hot">}}Process Standardization{{< /keyword >}}
-{{< keyword icon="bug">}}SaaS Management{{< /keyword >}}
-{{< keyword icon="circle-info">}}Risk & Compliance{{< /keyword >}}
-{{< keyword icon="check">}}Education Technology{{< /keyword >}}
+{{< keyword icon="check">}}Systems Administration{{< /keyword >}}
+{{< keyword icon="bug">}}Quality Assurance{{< /keyword >}}
+{{< keyword icon="layer-stack">}}SaaS Management{{< /keyword >}}
+{{< keyword icon="triangle-exclamation">}}Risk & Compliance{{< /keyword >}}
+{{< keyword icon="cloud">}}AWS Infrastructure{{< /keyword >}}
+{{< keyword icon="server">}}Infrastructure Management{{< /keyword >}}
+{{< keyword icon="graduation-cap">}}Education Technology{{< /keyword >}}
+
 {{< /keywordList >}}
+
 </div>
 </div>
 
@@ -82,12 +87,14 @@ layout: career-journey
 
 <div class="quick-fade-in-animation" style="--delay: 950ms">
 {{< keywordList >}}
-{{< keyword icon="lightbulb">}}Regulatory Compliance{{< /keyword >}}
-{{< keyword icon="mug-hot">}}Technical Creativity{{< /keyword >}}
-{{< keyword icon="bug">}}Workflow Automation{{< /keyword >}}
-{{< keyword icon="circle-info">}}ERP Systems{{< /keyword >}}
-{{< keyword icon="check">}}Data Security{{< /keyword >}}
+{{< keyword icon="cogs">}}Workflow Automation{{< /keyword >}}
+{{< keyword icon="scales">}}Regulatory Compliance{{< /keyword >}}
+{{< keyword icon="computer">}}Technical Support{{< /keyword >}}
+{{< keyword icon="cycle">}}ERP Systems{{< /keyword >}}
+{{< keyword icon="phone">}}Telephony{{< /keyword >}}
+{{< keyword icon="industry">}}Manufacturing Sector{{< /keyword >}}
 {{< /keywordList >}}
+
 </div>
 </div>
 
@@ -112,11 +119,11 @@ layout: career-journey
 
 <div class="quick-fade-in-animation" style="--delay: 1300ms">
 {{< keywordList >}}
-{{< keyword icon="lightbulb">}}Regulatory Compliance{{< /keyword >}}
-{{< keyword icon="mug-hot">}}Technical Creativity{{< /keyword >}}
-{{< keyword icon="bug">}}Workflow Automation{{< /keyword >}}
-{{< keyword icon="circle-info">}}ERP Systems{{< /keyword >}}
-{{< keyword icon="check">}}Data Security{{< /keyword >}}
+{{< keyword icon="computer">}}Technical Support{{< /keyword >}}
+{{< keyword icon="repeat">}}Backup & Recovery{{< /keyword >}}
+{{< keyword icon="internet">}}Website Development{{< /keyword >}}
+{{< keyword icon="up-right-dots">}}Workplace Modernization{{< /keyword >}}
+{{< keyword icon="people">}}Community Sector{{< /keyword >}}
 {{< /keywordList >}}
 </div>
 </div>
