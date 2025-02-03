@@ -1,10 +1,11 @@
 {{ define "main" }}
 <article class="max-w-full">
 	<div class="row">
-		<div class="contact-column-left">
+		<div class="contact-column-left" style="height: 100%">
 			<header>
 				<h1
 					class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral animated-text"
+					style="margin-bottom: 1em; margin-top: 1em"
 				>
 					{{ .Title | emojify }}
 				</h1>
@@ -27,51 +28,71 @@
 				>
 					<input type="hidden" name="form-name" value="contact" />
 					<div class="form-group animated-text">
-						<label class="col-md-12 control-label" for="Name"></label>
+						<label class="col-md-12 control-label" for="name"></label>
 						<input
 							id="name"
 							name="name"
 							type="text"
 							placeholder="What's your name?"
 							class="form-control input-lg"
-							required=""
+							required
 							autocomplete="off"
 						/>
 					</div>
 					<div class="form-group animated-text">
-						<label class="col-md-12 control-label" for="Email"></label>
+						<label class="col-md-12 control-label" for="email"></label>
 						<input
 							id="email"
 							name="email"
 							type="email"
 							placeholder="What's your email address"
 							class="form-control input-md"
-							required="true"
+							required
 							autocomplete="off"
 						/>
 					</div>
 					<div class="form-group animated-text">
-						<label class="col-md-12 control-label" for="Subject"></label>
+						<label class="col-md-12 control-label" for="subject"></label>
 						<input
 							id="subject"
 							name="subject"
 							type="text"
 							placeholder="What do you want to discuss?"
 							class="form-control input-md"
-							required=""
+							required
 							autocomplete="off"
 						/>
 					</div>
 					<div class="form-group animated-text">
-						<label class="col-md-12 control-label" for=""></label>
+						<label class="col-md-12 control-label" for="message"></label>
 						<textarea
 							class="form-control"
 							id="message"
 							name="message"
 							placeholder="Tell me more"
+							required
 							rows="8"
 						></textarea>
 					</div>
+					<div
+						class="h-captcha flex justify-center"
+						data-sitekey="71045fd0-431a-4626-8768-c7b408f67c6c"
+					></div>
+					<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+					<script>
+						document
+							.getElementById("contact")
+							.addEventListener("submit", function (event) {
+								var hcaptchaResponse = document.querySelector(
+									"[name='h-captcha-response']"
+								)?.value;
+
+								if (!hcaptchaResponse) {
+									alert("Please complete the hCaptcha before submitting.");
+									event.preventDefault();
+								}
+							});
+					</script>
 					<div class="form-group animated-text">
 						<button
 							role="button"
