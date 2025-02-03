@@ -1,15 +1,5 @@
----
-title: "Education"
-description: "IT Solutions Specialist | Streamlined Tech | Empowered Teams | Secured Solutions"
-layout: education
----
-
-<div style="display:grid; grid-template-columns: 1fr 1fr">
-<div style=" display:flex; flex-wrap:wrap; align-items:flex-start; flex-direction:column">
-
-</div>
-<div style=" display:flex; flex-wrap:wrap; align-items:flex-start; flex-direction:column">
-{{< animatedTile icon="" header="Certified Cloud Organization Admin " badge="Nov '23 - Nov '25" subheader="Atlassian" subheader2="Issued Nov '23, Expires Nov '25" animationClass="quick-slide-across-in-animation" animationDelay=0 >}}
+{{ range .Site.Data.education.education }}
+{{ .Page.RenderString (printf '{{< animatedTile header="{{ .name }}" subheader="{{ .organization }}" subheader2="Issued {{ .issued_date }}, Expires {{ .expiry_date }}" animationClass="quick-slide-across-in-animation" animationDelay=0 >}}')}}
 
 <div id="contentContainer">
 <span id="more1" class="text-sm" style = "display:none">
@@ -18,13 +8,12 @@ The Atlassian Cloud Organization Admin Certification is intended for administrat
 <a href="javascript:showMore('1', true)" id="expandLink1" class="quick-fade-in-animation" style="--delay: 550ms""> ▽ About This Certification ▽ </a>
 <a href="javascript:showMore('1', false)" id="collapseLink1" style="display:none"> △ Hide △ </a>
 <div class="quick-fade-in-animation" style="--delay: 100ms">
-{{< keywordList >}}
-{{< keyword icon="">}}Jira{{< /keyword >}}
-{{< keyword icon="">}}Confluence{{< /keyword >}}
-{{< keyword icon="">}}Organization Administration{{< /keyword >}}
-{{< /keywordList >}}
+{{ .Page.RenderString (printf '{{< keywordList >}}') }}
+{{ .Page.RenderString (printf '{{< keyword >}}Jira{{< /keyword >}}') }}
+{{ .Page.RenderString (printf '{{< keyword >}}Confluence{{< /keyword >}}') }}
+{{ .Page.RenderString (printf '{{< keyword >}}Organization Administration{{< /keyword >}}') }}
+{{ .Page.RenderString (printf '{{< /keywordList >}}') }}
 </div>
 </div>
-{{< /animatedTile>}}
-</div>
-</div>
+{{ .Page.RenderString (printf '{{< /animatedTile>}}') }}
+{{ end }}

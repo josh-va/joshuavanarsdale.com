@@ -1,0 +1,36 @@
+<div class="flex" style="height: auto">
+	<div
+		class="block blurry p-6 rounded-lg shadow-2xl ml-6 mb-10 break-words"
+		style="height: auto"
+	>
+		<div>
+			{{ if $header }}
+			<h2
+				class="mt-0 {{ .animationClass }}"
+				style="--delay: {{ .firstDelay }}; align-self: center"
+			>
+				{{ $header }}
+			</h2>
+			{{ end }}
+		</div>
+		<div class="flex flex-row justify-between">
+			{{ if $subheader }}
+			<h3
+				class="{{ .animationClass }}"
+				style="--delay: {{ .secondDelay }};  margin-top: 0"
+			>
+				{{ $subheader }}
+			</h3>
+			{{ end }} {{ if $subheader2 }}
+			<h4
+				class="{{ $animationClass }}"
+				style="--delay: {{ $secondDelay }};  margin-top: 0; font-style: italic;"
+			>
+				{{ $subheader2 }}
+			</h4>
+			{{ end }}
+		</div>
+
+		<div class="mb-6">{{- .Inner -}}</div>
+	</div>
+</div>

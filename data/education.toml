@@ -1,0 +1,8 @@
+[[education]]
+    name = "Certified Cloud Organization Admin"
+    organization = "Atlassian"
+    issued_date = "Nov '23"
+    expiry_date = "Nov '25"
+    link = "https://www.certmetrics.com/atlassian/public/badge.aspx?i=52&t=c&d=2023-11-22&ci=AT00145220"
+    description = "The Atlassian Cloud Organization Admin Certification is intended for administrators of Atlassian Cloud organizations. The candidate is able to manage user and group access to Atlassian products across multiple Cloud sites, including managed and unmanaged accounts. They understand various access methods such as domains, invitation links, and user invites. They are also able to configure admin APIs, application tunnels, release tracks, sandboxes, and IP allowlisting."
+

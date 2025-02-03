@@ -1,4 +1,49 @@
 {{ define "main" }}
+<script>
+	function showMore(num, expand) {
+		var moreId = "more" + num;
+		var expandLinkId = "expandLink" + num;
+		var collapseLinkId = "collapseLink" + num;
+		if (expand) {
+			if (
+				document
+					.getElementById(expandLinkId)
+					.classList.contains("quick-fade-in-animation")
+			) {
+				document
+					.getElementById(expandLinkId)
+					.classList.remove("quick-fade-in-animation");
+			}
+
+			document.getElementById(expandLinkId).style.display = "none";
+			document.getElementById(collapseLinkId).style.display = "inline";
+			document.getElementById(moreId).style.display = "block";
+			document
+				.getElementById(moreId)
+				.classList.remove("slow-wipe-out-animation");
+			document.getElementById(moreId).classList.add("slow-wipe-in-animation");
+		} else {
+			function transitionEnd() {
+				console.log("end");
+				document.getElementById(moreId).style.display = "none";
+				document.getElementById(collapseLinkId).style.display = "none";
+				document.getElementById(expandLinkId).style.display = "inline";
+				document
+					.getElementById(moreId)
+					.removeEventListener("animationend", transitionEnd);
+			}
+			document
+				.getElementById(moreId)
+				.addEventListener("animationend", transitionEnd);
+
+			document
+				.getElementById(moreId)
+				.classList.remove("slow-wipe-in-animation");
+			document.getElementById(moreId).classList.add("slow-wipe-out-animation");
+		}
+	}
+</script>
+
 <article class="max-w-full">
 	<header>
 		{{ if .Params.showBreadcrumbs | default

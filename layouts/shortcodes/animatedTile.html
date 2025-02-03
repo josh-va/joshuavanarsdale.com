@@ -5,47 +5,41 @@ $animationClass }} {{ $animationClass = "" }} {{ end }} {{ $animationDelay :=
 .Get "animationDelay" }} {{ if not $animationDelay }} {{ $animationDelay = 0 }}
 {{ end }} {{ $secondAnimationDelay := add $animationDelay 50 }} {{ $firstDelay
 := printf "%dms" $animationDelay }} {{ $secondDelay := printf "%dms"
-$secondAnimationDelay }}
+$secondAnimationDelay }} {{ $subheader2 := .Get "subheader2" }}
 
-<div class="flex flex-start">
+<div class="flex" style="height: auto">
 	<div
-		class="block blurry p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"
+		class="block blurry p-6 rounded-lg shadow-2xl ml-6 mb-10 break-words"
 		style="height: auto"
 	>
-		<div class="flex justify-between">
-			<div class="flex">
-				<span
-					class="quick-fade-in-animation bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full"
-					style="--delay: {{ $firstDelay }}"
-				>
-					{{ partial "icon" $icon }}
-				</span>
-				{{ if $header }}
-				<h2
-					class="mt-0 {{ $animationClass }}"
-					style="--delay: {{ $firstDelay }}; padding-left:20px"
-				>
-					{{ $header }}
-				</h2>
-				{{ end }}
-			</div>
-			{{ if $badge }}
-			<h3
-				class="{{ $animationClass }}"
-				style="--delay: {{ $firstDelay }}; margin-top:0px"
+		<div>
+			{{ if $header }}
+			<h2
+				class="mt-0 {{ $animationClass }}"
+				style="--delay: {{ $firstDelay }}; align-self: center"
 			>
-				{{ partial "badge" $badge}}
-			</h3>
+				{{ $header }}
+			</h2>
 			{{ end }}
 		</div>
-		{{ if $subheader }}
-		<h3
-			class="{{ $animationClass }}"
-			style="--delay: {{ $secondDelay }};  margin-top: 0"
-		>
-			{{ $subheader }}
-		</h3>
-		{{ end }}
+		<div class="flex flex-row justify-between">
+			{{ if $subheader }}
+			<h3
+				class="{{ $animationClass }}"
+				style="--delay: {{ $secondDelay }};  margin-top: 0"
+			>
+				{{ $subheader }}
+			</h3>
+			{{ end }} {{ if $subheader2 }}
+			<h4
+				class="{{ $animationClass }}"
+				style="--delay: {{ $secondDelay }};  margin-top: 0; font-style: italic;"
+			>
+				{{ $subheader2 }}
+			</h4>
+			{{ end }}
+		</div>
+
 		<div class="mb-6">{{- .Inner -}}</div>
 	</div>
 </div>
