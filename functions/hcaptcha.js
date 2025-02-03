@@ -6,13 +6,13 @@ export async function onRequestPost(context) {
         return new Response("hCaptcha verification failed", { status: 400 });
     }
 
-    const secretKey = "your-hcaptcha-secret-key";
+    const secretKey = env.HCAPTCHA_SECRET_KEY;
     const verificationUrl = "https://api.hcaptcha.com/siteverify";
     
     const response = await fetch(verificationUrl, {
         method: "POST",
         body: new URLSearchParams({
-            secret: env.HCAPTCHA_SECRET_KEY,
+            secret: secretKey,
             response: hcaptchaResponse
         })
     });

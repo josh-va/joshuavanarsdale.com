@@ -1,12 +1,9 @@
 export async function onRequestPost({ request, env }) {
-    // Parse form data from the request
     const formData = await request.formData();
     const email = formData.get("email");
     const name = formData.get("name");
     const subject = formData.get("subject");
     const message = formData.get("message");
-
-    // Mailgun API endpoint and parameters
     const mailgunUrl = `https://api.mailgun.net/v3/${env.MAILGUN_DOMAIN}/messages`;
     const params = new URLSearchParams();
     params.append("from", `joshuavanarsdale.com Contact Form <contactform@${env.MAILGUN_DOMAIN}>`);
@@ -15,7 +12,6 @@ export async function onRequestPost({ request, env }) {
     params.append("text", `From: ${name} <${email}>\n\nMessage: ${message}`);
 
     try {
-        // Send the request to Mailgun API
         const response = await fetch(mailgunUrl, {
             method: "POST",
             headers: {
@@ -24,7 +20,6 @@ export async function onRequestPost({ request, env }) {
             body: params,
         });
 
-        // Handle the response
         if (response.ok) {
             return Response.redirect(new URL("/thank-you/", request.url), 302);
         } else {

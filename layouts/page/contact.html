@@ -34,7 +34,7 @@
 							type="text"
 							placeholder="What's your name?"
 							class="form-control input-lg"
-							required=""
+							required
 							autocomplete="off"
 						/>
 					</div>
@@ -46,7 +46,7 @@
 							type="email"
 							placeholder="What's your email address"
 							class="form-control input-md"
-							required="true"
+							required
 							autocomplete="off"
 						/>
 					</div>
@@ -58,7 +58,7 @@
 							type="text"
 							placeholder="What do you want to discuss?"
 							class="form-control input-md"
-							required=""
+							required
 							autocomplete="off"
 						/>
 					</div>
@@ -69,6 +69,7 @@
 							id="message"
 							name="message"
 							placeholder="Tell me more"
+							required
 							rows="8"
 						></textarea>
 					</div>
@@ -79,7 +80,7 @@
 					<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 					<script>
 						document
-							.getElementById("contact-form")
+							.getElementById("contact")
 							.addEventListener("submit", function (event) {
 								var hcaptchaResponse = document.querySelector(
 									"[name='h-captcha-response']"
