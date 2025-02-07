@@ -1,0 +1,32 @@
+{{ $delay1 := mul .index 100}} {{ $delay2 := add $delay1 100}}
+
+<div class="flex" style="height: auto">
+	<div
+		class="block blurry p-6 rounded-lg shadow-2xl ml-6 mb-10 break-words"
+		style="height: auto"
+	>
+		<div>
+			<h2
+				class="mt-0 quick-fade-in-animation"
+				style="--delay: {{ $delay1 }}ms; align-self: center"
+			>
+				{{ .name }}
+			</h2>
+		</div>
+		<div class="flex flex-row justify-between">
+			<h3
+				class="quick-fade-in-animation"
+				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
+			>
+				{{ .organization }}
+			</h3>
+			<h4
+				class="quick-fade-in-animation"
+				style="--delay: {{ $delay2 }}ms;  margin-top: 0; font-style: italic;"
+			>
+				{{ .link }}
+			</h4>
+		</div>
+		<div class="mb-6">{{ .description }}</div>
+	</div>
+</div>

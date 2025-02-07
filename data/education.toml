@@ -1,8 +1,71 @@
 [[education]]
-    name = "Certified Cloud Organization Admin"
+    name = "Cloud Organization Admin"
     organization = "Atlassian"
     issued_date = "Nov '23"
     expiry_date = "Nov '25"
     link = "https://www.certmetrics.com/atlassian/public/badge.aspx?i=52&t=c&d=2023-11-22&ci=AT00145220"
     description = "The Atlassian Cloud Organization Admin Certification is intended for administrators of Atlassian Cloud organizations. The candidate is able to manage user and group access to Atlassian products across multiple Cloud sites, including managed and unmanaged accounts. They understand various access methods such as domains, invitation links, and user invites. They are also able to configure admin APIs, application tunnels, release tracks, sandboxes, and IP allowlisting."
+    valid = true
 
+[[education]]
+    name = "SysOps Administrator - Associate"
+    organization = "Amazon Web Services"
+    issued_date = "Jul '23"
+    expiry_date = "Jul '26"
+    link = "https://www.credly.com/badges/7dbf2e51-4156-485d-a3d7-757ac11ee063"
+    description = "Earners of this certification have a comprehensive understanding on how to deploy, manage, and operate IT systems on the AWS Cloud. They demonstrated the ability to migrate on-premises workloads to AWS and monitor, scale, and secure systems on the AWS platform. Badge owners are able to provide guidance on implementing best practices for cloud operations."
+    valid = true
+
+[[education]]
+    name = "Security+"
+    organization = "CompTIA"
+    issued_date = "May '23"
+    expiry_date = "May '26"
+    link = "https://www.credly.com/badges/351958c2-bacc-4e67-8650-9a8c35593dc1"
+    description = "Earners of the CompTIA Security+ certification have the knowledge and skills necessary to perform core security functions required of any cybersecurity role. CompTIA Security+ professionals know how to identify and address potential threats, attacks and vulnerabilities and they have established techniques in risk management, risk mitigation, threat management and intrusion detection."
+    valid = true
+    
+[[education]]
+    name = "Teams Administrator Associate"
+    organization = "Microsoft"
+    issued_date = "Apr '22"
+    expiry_date = "Apr '26"
+    link = "https://learn.microsoft.com/en-us/users/joshuavanarsdale-5161/credentials/4c63466060a87251?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+    description = "Configure and manage a Teams environment. Manage teams, channels, chats, and apps. Manage meetings and calling. Monitor, report on, and troubleshoot Teams"
+    valid = true
+
+[[education]]
+    name = "Managing Jira Cloud Projects"
+    organization = "Atlassian"
+    issued_date = "Sep '20"
+    expiry_date = "Aug '25"
+    link = "https://cp.certmetrics.com/atlassian/en/public/badge/c?id=AT00145220&date=2020-09-14&ccat=30"
+    description = "The Managing Jira Cloud Projects Certification builds on the professional's existing agile skills, with a focus on optimizing the power of Jira Software for their development teams. This credential is for scrum masters, project administrators, project leads and board administrators who can configure and automate Jira Software Scrum and Kanban projects for classic and next-gen."
+    valid = true
+
+[[education]]
+    name = "Certified Tester Foundation Level"
+    organization = "ISTQB"
+    issued_date = "Jun '20"
+    expiry_date = ""
+    link = "https://www.anztb.org/certified-tester-list/?_certified_tester_list=joshua%20van%20arsdale"
+    description = ""
+    valid = true
+
+[[education]]
+    name = "Azure Administrator Associate"
+    organization = "Microsoft"
+    issued_date = "Jul '19"
+    expiry_date = "Jul '22"
+    link = "https://www.credly.com/badges/3f96084c-293d-4124-94d0-10a2b4d4ca9f"
+    description = "Earning Azure Administrator Associate certification validates the skills and knowledge to implement, manage, and monitor an organization’s Microsoft Azure environment. Candidates have a deep understanding of each implementing, managing, and monitoring identity, governance, storage, compute, and virtual networks in a cloud environment, plus provision, size, monitor, and adjust resources, when needed."
+    valid = false
+
+[[education]]
+    name = "Housekeeping and Governance in Jira"
+    organization = "Atlassian"
+    issued_date = "Aug '22"
+    expiry_date = "Aug '24"
+    link = "https://www.certmetrics.com/atlassian/public/badge.aspx?i=39&t=c&d=2022-08-25&ci=AT00145220"
+    description = ""
+    valid = false

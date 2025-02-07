@@ -6,25 +6,10 @@ layout: education
 
 <div style="display:grid; grid-template-columns: 1fr 1fr">
 <div style=" display:flex; flex-wrap:wrap; align-items:flex-start; flex-direction:column">
+{{< education_list mode="1" >}}
 
 </div>
 <div style=" display:flex; flex-wrap:wrap; align-items:flex-start; flex-direction:column">
-{{< animatedTile icon="" header="Certified Cloud Organization Admin " badge="Nov '23 - Nov '25" subheader="Atlassian" subheader2="Issued Nov '23, Expires Nov '25" animationClass="quick-slide-across-in-animation" animationDelay=0 >}}
-
-<div id="contentContainer">
-<span id="more1" class="text-sm" style = "display:none">
-The Atlassian Cloud Organization Admin Certification is intended for administrators of Atlassian Cloud organizations. The candidate is able to manage user and group access to Atlassian products across multiple Cloud sites, including managed and unmanaged accounts. They understand various access methods such as domains, invitation links, and user invites. They are also able to configure admin APIs, application tunnels, release tracks, sandboxes, and IP allowlisting.
-</span>
-<a href="javascript:showMore('1', true)" id="expandLink1" class="quick-fade-in-animation" style="--delay: 550ms""> ▽ About This Certification ▽ </a>
-<a href="javascript:showMore('1', false)" id="collapseLink1" style="display:none"> △ Hide △ </a>
-<div class="quick-fade-in-animation" style="--delay: 100ms">
-{{< keywordList >}}
-{{< keyword icon="">}}Jira{{< /keyword >}}
-{{< keyword icon="">}}Confluence{{< /keyword >}}
-{{< keyword icon="">}}Organization Administration{{< /keyword >}}
-{{< /keywordList >}}
-</div>
-</div>
-{{< /animatedTile>}}
+{{< education_list mode="0" >}}
 </div>
 </div>
