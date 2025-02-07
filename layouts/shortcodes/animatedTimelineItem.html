@@ -20,27 +20,25 @@ $secondAnimationDelay }}
 			style="height: auto"
 		>
 			<div class="flex justify-between">
-				{{ if $header }}
 				<h2
 					class="mt-0 {{ $animationClass }}"
 					style="--delay: {{ $firstDelay }}"
 				>
 					{{ $header }}
 				</h2>
-				{{ end }} {{ if $badge }}
-				<h3 class="{{ $animationClass }}" style="--delay: {{ $firstDelay }}">
-					{{ partial "badge" $badge}}
-				</h3>
-				{{ end }}
 			</div>
-			{{ if $subheader }}
 			<h3
 				class="{{ $animationClass }}"
 				style="--delay: {{ $secondDelay }};  margin-top: 0"
 			>
 				{{ $subheader }}
 			</h3>
-			{{ end }}
+			<h4
+				class="{{ $animationClass }}"
+				style="--delay: {{ $secondDelay }};  margin-top: 0"
+			>
+				{{ $badge }}
+			</h4>
 			<div class="mb-6">{{- .Inner -}}</div>
 		</div>
 	</div>
