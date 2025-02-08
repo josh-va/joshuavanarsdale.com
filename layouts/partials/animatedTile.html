@@ -1,5 +1,5 @@
 {{ $delay1 := mul .index 100}} {{ $delay2 := add $delay1 100}} {{ $delay3 := add
-$delay2 100}}
+$delay2 100}}{{ $delay4 := add $delay3 100}}
 
 <div class="flex" style="height: auto; width: 100%">
 	<div
@@ -37,7 +37,10 @@ $delay2 100}}
 				{{ end }}
 			</ul>
 		</div>
-		<span class="flex" style="cursor: pointer; justify-self: center">
+		<span
+			class="flex quick-fade-in-animation"
+			style="--delay: {{ $delay4 }}ms;cursor: pointer; justify-self: center"
+		>
 			<span
 				class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
 			>
