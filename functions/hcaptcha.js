@@ -23,6 +23,5 @@ export async function onRequestPost(context) {
         return new Response("hCaptcha verification failed", { status: 400 });
     }
 
-    // Continue processing the form (e.g., send email)
     return new Response("Form submitted successfully", { status: 200 });
 }
