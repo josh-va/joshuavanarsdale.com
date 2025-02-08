@@ -1,0 +1,9 @@
+{{ $preSort := sort .site.Data.education.education "name" "asc" }} {{ range
+$index, $item := sort $preSort "valid" "desc" }} {{ if $item.valid }} {{ partial
+"animatedTile.html" (dict "name" $item.name "organization" $item.organization
+"issued_date" $item.issued_date "expiry_date" $item.expiry_date "link"
+$item.link "description" $item.description "valid" $item.valid "index" $index )
+}} {{ else }} {{ partial "disabledAnimatedTile.html" (dict "name" $item.name
+"organization" $item.organization "issued_date" $item.issued_date "expiry_date"
+$item.expiry_date "link" $item.link "description" $item.description "valid"
+$item.valid "index" $index ) }} {{ end }} {{ end }}
