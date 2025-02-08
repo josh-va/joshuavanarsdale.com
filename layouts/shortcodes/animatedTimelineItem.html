@@ -1,45 +1,4 @@
-{{ $icon := .Get "icon" | default "check" }} {{ $header := .Get "header" }} {{
-$badge := .Get "badge" }} {{ $subheader := .Get "subheader" }} {{ $text := .Get
-"text" }} {{ $animationClass := .Get "animationClass" }} {{ if not
-$animationClass }} {{ $animationClass = "" }} {{ end }} {{ $animationDelay :=
-.Get "animationDelay" }} {{ if not $animationDelay }} {{ $animationDelay = 0 }}
-{{ end }} {{ $secondAnimationDelay := add $animationDelay 50 }} {{ $firstDelay
-:= printf "%dms" $animationDelay }} {{ $secondDelay := printf "%dms"
-$secondAnimationDelay }}
-
-<li>
-	<div class="flex flex-start">
-		<div
-			class="quick-fade-in-animation bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"
-			style="--delay: {{ $firstDelay }}"
-		>
-			{{ partial "icon" $icon }}
-		</div>
-		<div
-			class="block blurry p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"
-			style="height: auto"
-		>
-			<div class="flex justify-between">
-				<h2
-					class="mt-0 {{ $animationClass }}"
-					style="--delay: {{ $firstDelay }}"
-				>
-					{{ $header }}
-				</h2>
-			</div>
-			<h3
-				class="{{ $animationClass }}"
-				style="--delay: {{ $secondDelay }};  margin-top: 0"
-			>
-				{{ $subheader }}
-			</h3>
-			<h4
-				class="{{ $animationClass }}"
-				style="--delay: {{ $secondDelay }};  margin-top: 0"
-			>
-				{{ $badge }}
-			</h4>
-			<div class="mb-6">{{- .Inner -}}</div>
-		</div>
-	</div>
-</li>
+{{ partial "animatedTimelineItem.html" (dict "name" (.Get "name") "organization"
+(.Get "organization") "start_date" (.Get "start_date") "end_date" (.Get
+"end_date") "location" (.Get "location") "description" (.Get "description")
+"keywords" (.Get "keywords") "highlights" (.Get "highlights")) }}
