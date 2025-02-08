@@ -14,11 +14,7 @@
       "nav.skip_to_main" }}</a>
   </div>
   {{ $header := print "partials/header/" .Site.Params.header.layout ".html" }}
-  {{ if templates.Exists $header }}
   {{ partial $header . }}
-  {{ else }}
-  {{ partial "partials/header/basic.html" . }}
-  {{ end }}
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow" {{if .IsHome}} style="align-content:center" {{end}}>
       <div class="fixed inset-x-0 top-0" style="z-index: -10">

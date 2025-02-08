@@ -1,0 +1,85 @@
+{{ $delay1 := mul .index 500}} {{ $delay2 := add $delay1 50}} {{ $delay3 := add
+$delay2 50}} {{ $delay4 := add $delay3 150}} {{ $delay5 := add $delay4 100}} {{
+$more := printf "%s%d" "more" .index }} {{ $expandLink := printf "%s%d"
+"expandLink" .index }} {{ $collapseLink := printf "%s%d" "collapseLink" .index
+}}
+
+<li>
+	<div class="flex flex-start">
+		<div
+			class="quick-fade-in-animation bg-primary-500 dark:bg-primary-300 text-neutral-50 dark:text-neutral-700 min-w-[30px] h-8 text-2xl flex items-center justify-center rounded-full -ml-12 mt-5"
+			style="--delay: {{ $delay1 }}ms"
+		>
+			{{ partial "icon" "location-dot" }}
+		</div>
+		<div
+			class="block blurry p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"
+			style="height: auto"
+		>
+			<div class="flex justify-between">
+				<h2
+					class="mt-0 quick-fade-in-animation"
+					style="--delay: {{ $delay1 }}ms"
+				>
+					{{ .name }}
+				</h2>
+			</div>
+			<h3
+				class="quick-fade-in-animation"
+				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
+			>
+				{{ .organization }}
+			</h3>
+			<h4
+				class="quick-fade-in-animation"
+				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
+			>
+				{{ .start_date }} - {{ .end_date }}
+			</h4>
+			<div class="mb-6">
+				<ul class="slide-in-list-animation">
+					{{ range $index, $item := .highlights }} {{$highlightDelay := add
+					$delay3 (mul $index 50)}}
+					<li style="--delay: {{$highlightDelay}}ms">{{ . }}</li>
+					{{ end }}
+				</ul>
+				<div id="contentContainer">
+					<span
+						id="{{$more}}"
+						class="text-sm"
+						style="
+							display: none;
+							padding-top: 1rem;
+							padding-bottom: 1rem;
+							padding-left: 2rem;
+							padding-right: 2rem;
+						"
+					>
+						{{ .description | safeHTML}}
+					</span>
+					<a
+						href="javascript:showMore('{{ .index }}', true)"
+						id="{{$expandLink}}"
+						class="quick-fade-in-animation"
+						style="--delay: {{$delay4}}ms"
+					>
+						▽ Read More ▽
+					</a>
+					<a
+						href="javascript:showMore('{{ .index }}', false)"
+						id="{{$collapseLink}}"
+						style="display: none"
+					>
+						△ Hide △
+					</a>
+					<div class="quick-fade-in-animation" style="--delay: {{$delay5}}ms">
+						<div class="flex flex-row flex-wrap items-center space-x-2">
+							{{ range .keywords }} {{ partial "keyword.html" (dict "icon" .icon
+							"text" .text) }} {{ end }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>

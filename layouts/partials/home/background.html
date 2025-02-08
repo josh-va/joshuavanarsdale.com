@@ -39,14 +39,14 @@ false }}
 					</h1>
 					{{ with .Site.Params.Author.title }}
 					<h2
-						class="mt-0 mb-0 text-3xl text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
+						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
 						style="--delay: 100ms"
 					>
 						{{ . | markdownify }}
 					</h2>
 					{{ end }} {{ with .Site.Params.Author.headline }}
 					<h3
-						class="mt-0 mb-0 text-3xl text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
+						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
 						style="padding-top: 0.5rem; --delay: 150ms"
 					>
 						{{ . | markdownify }}

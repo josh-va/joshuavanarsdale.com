@@ -1,0 +1,128 @@
+[[career]]
+    name = "Independent Technology Consultant"
+    start_date = "Feb '23"
+    end_date = "Sep '24"
+    organization = "Self-Employed"
+    location = "Sydney, NSW, Australia"
+    highlights = [
+        "Built and maintained strong client relationships to best understand and meet their needs.",
+        "Delivered end-to-end solutions to clients that solved key business challenges.",
+        "Authored clear, human-centered documentation and milestone artefacts.",
+    ]
+    description = """
+My time as an Independent Technology Consultant was dedicated to delivering tangible results for my clients through bespoke engagements. Whether it was delivering end-to-end projects or advising on strategy and policy, I always worked closely to understand my clients' needs, and delivered results that made sense to their business. I focused on ensuring that the solutions I provided fit their needs, were designed with security in mind, and that they had clear and practical technical documentation to support their ongoing use.<br><br>
+One standout project was when I helped one of my clients reduce their IT operating expenditure by over 80% through a systems review. This made a huge impact to their bottom-line and really emphasises the importance of right-sized solutions. With another client, I let the acceptance and regression testing of their web and mobile applications. I worked closely with their development teams to ensure that bugs were identified, triaged and resolved, and that all changes were compiled and documented in user-centric release note documents.<br><br>
+Through this time as a self-employed sole trader, I also needed to manage the organizational and administrative side of managing my work and relationships with clients. This included drafting contracts, handling invoicing and payments, scheduling work, and ensuring clear and constant communications with clients.
+    """
+    keywords = [
+        {icon = "mug-hot", text = "Project Management"},
+        {icon = "code", text = "IT Optimization"},
+        {icon = "circle-info", text = "Technical Documentation"},
+        {icon= "heart", text = "Client Relationship Building"},
+        {icon= "briefcase", text = "Business Administration"},
+        {icon= "user", text = "Sole Trader"},
+    ]
+
+[[career]]
+    name = "Internal IT & Quality Assurance Administrator"
+    start_date = "Jan '19"
+    end_date = "Nov '22"
+    organization = "ClickView"
+    location = "Pyrmont, NSW, Australia"
+    highlights = [
+        "Orchestrated systems administration, overseeing IT infrastructure, user management, and endpoint security.",
+        "Architected the HD upgrade of a global TV broadcast recording service used by 5,000+ schools.",
+        "Strengthened IT security and compliance by developing and implementing policies.",
+    ]
+    description = """
+I was responsible for managing internal systems and infrastructure, ensuring day-to-day operations ran smoothly so the teams could focus on delivering world-class video education without being bogged down by technical hurdles. The endpoint environment primarily consisted of Windows and macOS laptops, along with an iOS mobile fleet, while the server infrastructure was split between on-premises Hyper-V clusters and AWS resources. One of my key focuses was ensuring site-to-site and client-to-site VPNs remained secure and stable as business needs evolved.<br><br>
+I managed and supported a wide array of platforms that empowered the enterprise, including Office365, Exchange Online, Entra ID SSO, Dialpad, Slack, and Zoom, as well as team-specific tools like Jira, Monday.com, and Adobe Suite. I also managed security applications including CrowdStrike, 1Password, and OpenVPN, ensuring a cybersecurity stance that was strong yet low-impact to users.<br><br>
+In addition to administration, I played a key role in risk and compliance operations, overseeing ISO/IEC 27001 and Cyber Essentials Plus certifications. I conducted internal audits, developed and implemented technical and policy solutions, and worked closely with auditors and leadership to ensure a strong compliance and security posture.<br><br>
+I also led Quality Assurance for ClickView's products, ensuring rigorous software testing processes were in place. By identifying and resolving bugs, standardizing QA practices, and publishing user-centric release notes, I helped ensure products met the highest standards of quality and usability.<br><br>
+One of the major projects I led was the upgrade of an on-demand HD TV recording service, which provides 24/7 Free-To-Air recorded TV access to over 5,000 schools across Australia, New Zealand, and the United Kingdom. This involved the architecture and deployment of bespoke hardware stacks to multiple data centers around the world and seamlessly cutting the services over to minimize any customer interruptions.<br><br>
+Finally, I helped the company adapt to evolving needs by transitioning from on-premises to cloud-hosted telephony (cutting costs by 40%), coordinating the shift to remote and hybrid work arrangements, and streamlining IT support by engaging a managed service provider. These projects helped to ensure that resources were scalable as the company continued to grow.
+    """
+    keywords = [
+        {icon = "check", text = "Systems Administration"},
+        {icon = "bug", text = "Quality Assurance"},
+        {icon = "layer-stack", text = "SaaS Management"},
+        {icon = "triangle-exclamation", text = "Risk & Compliance"},
+        {icon = "cloud", text = "AWS Infrastructure"},
+        {icon = "server", text = "Infrastructure Management"},
+        {icon = "graduation-cap", text = "Education Technology"},
+    ]
+
+[[career]]
+    name = "IT Support Technician & GDPR Officer"
+    start_date = "Jan '18"
+    end_date = "Nov '18"
+    organization = "FAKRO GB"
+    location = "Derbyshire, England"
+    highlights = [
+        "Designed and implemented a GDPR compliance strategy, ensuring regulatory adherence.",
+        "Automated sales reporting, saving 8 hours per week and improving accuracy.",
+        "Developed KPI reporting dashboards to enhance performance tracking and target progress.",
+    ]
+    description = """
+I managed the on-premises IT systems that supported FAKRO GB's day-to-day operations and provided technical support to their remote sales teams. My initial focus was assisting in the implementation and transition to a new enterprise resource planning (ERP) system - Kerridge CS K8 - while providing ongoing systems administration.<br><br>
+During my time with FAKRO GB, I developed tools to empower staff productivity across the organization. This included live KPI dashboards and a proof-of-concept JavaScript mobile web app to measure roof pitch angles. I also automated the weekly sales reporting processes, saving 8 hours of work each week and improving accuracy by removing human errors.<br><br>
+Midway through my role, I led the company's preparation for the General Data Protection Regulation (GDPR). I conducted company-wide data flow audits, reviewed and updated policies, and ensured that the company met GDPR standards before the enforcement date. As the GDPR Officer, I was the subject matter expert for data protection matters in the organization, overseeing data subject access requests, advising on data processing procedures, and ensuring ongoing compliance.
+    """
+    keywords = [
+        {icon = "cogs", text = "Workflow Automation"},
+        {icon = "scales", text = "Regulatory Compliance"},
+        {icon = "computer", text = "Technical Support"},
+        {icon = "cycle", text = "ERP Systems"},
+        {icon = "phone", text = "Telephony"},
+        {icon = "industry", text = "Manufacturing Sector"},
+    ]
+
+[[career]]
+    name = "Business Operations Officer"
+    start_date = "Oct '15"
+    end_date = "Jul '17"
+    organization = "Western Sydney Community Forum"
+    location = "Parramatta, NSW, Australia"
+    highlights = [
+        "Championed data protection by designing a GDPR compliance strategy that met regulatory standards.",
+        "Improved operational efficiency by automating sales reporting, saving 8 hours a week.",
+        "Developed KPI reporting displays to improve performance tracking and target progress.",
+    ]
+    description = """
+I worked closely with the Western Sydney Community Forum executive team to develop both the IT and Business Operations portfolios, as well as provide technical support and systems administration. My role focused on improving the overall IT infrastructure and driving modernization efforts, ensuring that staff felt empowered and confident in utilizing technology in their daily work.<br><br>
+One highlight was redeveloping the company website to bring its management in-house, providing greater control and flexibility over content updates and maintenance. I also led the rapid transition from an on-premises Exchange server to Exchange Online after a critical hardware failure, ensuring minimal disruption to operations.<br><br>
+I managed Active Directory, Exchange Online, and Office365 administration, user lifecycle provisioning, and day-to-day resolution of IT issues for staff and clients. Additionally, I implemented a data backup and recovery strategy to enhance the organization's security posture, ensuring that critical data was protected and easily recoverable in case of an incident.<br><br>
+Beyond technical responsibilities, I also provided in-house training and upskilling to staff and clients, empowering them to better utilize new and existing IT solutions. I also served as a technical advisor to the executive team, ensuring that projects were supported by appropriate IT infrastructure.
+    """
+    keywords = [
+        {icon = "computer", text = "Technical Support"},
+        {icon = "repeat", text = "Backup & Recovery"},
+        {icon = "internet", text = "Website Development"},
+        {icon = "up-right-dots", text = "Workplace Modernization"},
+        {icon = "people", text = "Community Sector"},
+    ]
+
+[[career]]
+    name = "Business Operations Officer"
+    start_date = "Oct '15"
+    end_date = "Jul '17"
+    organization = "Western Sydney Community Forum"
+    location = "Parramatta, NSW, Australia"
+    highlights = [
+        "Championed data protection by designing a GDPR compliance strategy that met regulatory standards.",
+        "Improved operational efficiency by automating sales reporting, saving 8 hours a week.",
+        "Developed KPI reporting displays to improve performance tracking and target progress.",
+    ]
+    description = """
+I worked closely with the Western Sydney Community Forum executive team to develop both the IT and Business Operations portfolios, as well as provide technical support and systems administration. My role focused on improving the overall IT infrastructure and driving modernization efforts, ensuring that staff felt empowered and confident in utilizing technology in their daily work.<br><br>
+One highlight was redeveloping the company website to bring its management in-house, providing greater control and flexibility over content updates and maintenance. I also led the rapid transition from an on-premises Exchange server to Exchange Online after a critical hardware failure, ensuring minimal disruption to operations.<br><br>
+I managed Active Directory, Exchange Online, and Office365 administration, user lifecycle provisioning, and day-to-day resolution of IT issues for staff and clients. Additionally, I implemented a data backup and recovery strategy to enhance the organization's security posture, ensuring that critical data was protected and easily recoverable in case of an incident.<br><br>
+Beyond technical responsibilities, I also provided in-house training and upskilling to staff and clients, empowering them to better utilize new and existing IT solutions. I also served as a technical advisor to the executive team, ensuring that projects were supported by appropriate IT infrastructure.
+    """
+    keywords = [
+        {icon = "computer", text = "Technical Support"},
+        {icon = "repeat", text = "Backup & Recovery"},
+        {icon = "internet", text = "Website Development"},
+        {icon = "up-right-dots", text = "Workplace Modernization"},
+        {icon = "people", text = "Community Sector"},
+    ]

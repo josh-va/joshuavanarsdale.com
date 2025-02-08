@@ -28,6 +28,15 @@ html {
 	letter-spacing: 0.1rem;
 }
 
+.zenLoop {
+	font-family: zenLoop;
+}
+
+.text-3xl {
+	font-size: 2rem;
+	line-height: 2.5rem;
+	letter-spacing: 0.1rem;
+}
 
 #form-container {
 	justify-content: center;

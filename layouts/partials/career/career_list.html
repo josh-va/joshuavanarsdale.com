@@ -1,0 +1,5 @@
+{{ range $index, $item := .site.Data.career.career }} {{ partial
+"animatedTimelineItem.html" (dict "name" $item.name "start_date"
+$item.start_date "end_date" $item.end_date "organization" $item.organization
+"location" $item.location "highlights" $item.highlights "description"
+$item.description "keywords" $item.keywords "index" $index ) }} {{ end }}
