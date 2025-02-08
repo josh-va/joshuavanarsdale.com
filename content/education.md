@@ -5,11 +5,8 @@ layout: education
 ---
 
 <div style="display:grid; grid-template-columns: 1fr 1fr">
-<div style=" display:flex; flex-wrap:wrap; align-items:flex-start; flex-direction:column">
-{{< education_list mode="1" >}}
+{{< education_list >}}
 
 </div>
-<div style=" display:flex; flex-wrap:wrap; align-items:flex-start; flex-direction:column">
-{{< education_list mode="0" >}}
-</div>
-</div>
+<div>
+{{< formal_list >}}

@@ -1,9 +1,9 @@
-{{$mode := .mode}} {{ range $index, $item := .site.Data.education.education }}
-{{ if eq $mode 2}} {{ partial "animatedTile.html" (dict "name" $item.name
+{{ $preSort := sort .site.Data.education.education "name" "asc" }} {{ range
+$index, $item := sort $preSort "valid" "desc" }} {{ if $item.valid }} {{ partial
+"animatedTile.html" (dict "name" $item.name "organization" $item.organization
+"issued_date" $item.issued_date "expiry_date" $item.expiry_date "link"
+$item.link "description" $item.description "valid" $item.valid "index" $index )
+}} {{ else }} {{ partial "disabledAnimatedTile.html" (dict "name" $item.name
 "organization" $item.organization "issued_date" $item.issued_date "expiry_date"
-$item.expiry_date "link" $item.link "description" $item.description "index"
-$index ) }} {{ else }} {{$count := add $index 1 }} {{ if eq (mod $count 2)
-$mode}} {{ partial "animatedTile.html" (dict "name" $item.name "organization"
-$item.organization "issued_date" $item.issued_date "expiry_date"
-$item.expiry_date "link" $item.link "description" $item.description "index"
-$index ) }} {{ end }} {{ end }} {{end}}
+$item.expiry_date "link" $item.link "description" $item.description "valid"
+$item.valid "index" $index ) }} {{ end }} {{ end }}

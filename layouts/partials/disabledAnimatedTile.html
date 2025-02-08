@@ -9,39 +9,42 @@ $delay2 100}}
 			width: 100%;
 			margin-left: 3rem;
 			margin-right: 3rem;
-			margin-bottom: 1rem;
+			margin-bottom: 4rem;
 		"
 	>
 		<div>
 			<h2
-				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-xl"
+				class="mt-0 mb-2 quick-fade-in-animation text-neutral-300 dark:text-neutral-100 text-xl"
 				style="--delay: {{ $delay1 }}ms; justify-self: center; text-align: center;"
 			>
 				{{ .name }}
 			</h2>
 			<h3
-				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm"
+				class="mt-0 quick-fade-in-animation text-primary-400 dark:text-primary-400 text-sm"
 				style="--delay: {{ $delay2 }}ms; justify-self: center;"
 			>
 				{{ .organization }}
-				<span class="text-neutral-500 dark:text-neutral-100"
+				<span class="text-neutral-300 dark:text-neutral-100"
 					>| {{ .issued_date }} {{if .expiry_date }} - {{ .expiry_date }} {{ end
 					}}</span
 				>
 			</h3>
 		</div>
-		<div class="mb-6 quick-fade-in-animation" style="--delay: {{ $delay3 }}ms;">
+		<div
+			class="mb-6 quick-fade-in-animation text-neutral-300"
+			style="--delay: {{ $delay3 }}ms;"
+		>
 			<ul>
 				{{ range .description }}
-				<li>{{ . }}</li>
+				<li class="disabled">{{ . }}</li>
 				{{ end }}
 			</ul>
 		</div>
 		<span class="flex" style="cursor: pointer; justify-self: center">
 			<span
-				class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+				class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-400 dark:border-primary-600 dark:text-primary-400"
 			>
-				<a href="{{ .link }}">Link to Certificate </a>
+				Expired
 			</span>
 		</span>
 	</div>

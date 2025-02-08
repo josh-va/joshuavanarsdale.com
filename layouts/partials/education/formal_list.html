@@ -1,0 +1,4 @@
+{{ range $index, $item := .site.Data.formal.formal }} {{ partial
+"animatedTileSimple.html" (dict "name" $item.name "organization"
+$item.organization "issued_date" $item.issued_date "line2" $item.line2 "index"
+$index ) }} {{ end }}
