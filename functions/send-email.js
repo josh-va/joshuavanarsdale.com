@@ -1,5 +1,16 @@
 export async function onRequestPost({ request, env }) {
     const formData = await request.formData();
+    const hcaptchaResponse = formData.get("h-captcha-response");
+    const secretKey = env.HCAPTCHA_SECRET_KEY;
+    const verificationUrl = "https://api.hcaptcha.com/siteverify";
+        const captchaRes = await fetch(verificationUrl, {
+        method: "POST",
+        body: new URLSearchParams({ secret: secretKey, response: hcaptchaResponse }),
+    });
+    const captchaResult = await captchaRes.json();
+    if (!captchaResult.success) {
+        return new Response("hCaptcha verification failed", { status: 400 });
+    }
     const email = formData.get("email");
     const name = formData.get("name");
     const subject = formData.get("subject");
