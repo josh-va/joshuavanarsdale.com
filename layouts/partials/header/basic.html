@@ -1,5 +1,5 @@
-<div style="padding-left:0;padding-right:0;padding-top:0.5em;padding-bottom:0.5em"
-    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+<div 
+    class="main-menu flex items-center justify-between  md:justify-start space-x-3 px-0 py-2">
     {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
     {{ if $logo }}
@@ -79,7 +79,7 @@
 
             {{/* Appearance switch */}}
             {{ if .Site.Params.footer.showAppearanceSwitcher | default false }}
-            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400 mr-2">
                 <div class="flex items-center justify-center dark:hidden">
                     {{ partial "icon.html" "moon" }}
                 </div>

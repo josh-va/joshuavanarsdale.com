@@ -21,6 +21,54 @@ html {
 	backdrop-filter: blur(10px);
 }
 
+.width100 {
+	width: 100%;
+}
+
+.height100 {
+	height: 100%;
+}
+
+.display-none {
+	display: none;
+}
+
+
+.pb-1rem {
+	padding-bottom: 1rem;
+}
+
+.pt-1rem {
+	padding-top: 1rem;
+}
+
+.pl-2rem {
+	padding-left: 2rem;
+}
+
+.pr-2rem {
+	padding-right: 2rem;
+}
+
+.ml-3rem {
+	margin-left: 3rem;
+}
+
+.mr-3rem {
+	margin-right: 3rem;
+}
+
+.justify-self-center {
+	justify-self: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.auto-height {
+	height: auto;
+}
 
 .text-4xl {
 	font-size: 3rem;

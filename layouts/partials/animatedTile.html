@@ -1,27 +1,20 @@
 {{ $delay1 := mul .index 100}} {{ $delay2 := add $delay1 100}} {{ $delay3 := add
 $delay2 100}}{{ $delay4 := add $delay3 100}}
 
-<div class="flex" style="height: auto; width: 100%">
+<div class="flex auto-height width100">
 	<div
-		class="block blurry p-6 rounded-lg shadow-2xl break-words"
-		style="
-			height: auto;
-			width: 100%;
-			margin-left: 3rem;
-			margin-right: 3rem;
-			margin-bottom: 1rem;
-		"
+		class="block blurry p-6 rounded-lg shadow-2xl break-words auto-height width100 ml-3 mr-3 mb-1"
 	>
 		<div>
 			<h2
-				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-xl"
-				style="--delay: {{ $delay1 }}ms; justify-self: center; text-align: center;"
+				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-xl text-center justify-self-center"
+				style="--delay: {{ $delay1 }}ms"
 			>
 				{{ .name }}
 			</h2>
 			<h3
-				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm"
-				style="--delay: {{ $delay2 }}ms; justify-self: center;"
+				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm justify-self-center"
+				style="--delay: {{ $delay2 }}ms;"
 			>
 				{{ .organization }}
 				<span class="text-neutral-500 dark:text-neutral-100"
@@ -38,8 +31,8 @@ $delay2 100}}{{ $delay4 := add $delay3 100}}
 			</ul>
 		</div>
 		<span
-			class="flex quick-fade-in-animation"
-			style="--delay: {{ $delay4 }}ms;cursor: pointer; justify-self: center"
+			class="flex quick-fade-in-animation justify-self-center"
+			style="--delay: {{ $delay4 }}ms;"
 		>
 			<span
 				class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"

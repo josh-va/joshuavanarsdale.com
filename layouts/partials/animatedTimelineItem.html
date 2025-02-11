@@ -13,8 +13,7 @@ $more := printf "%s%d" "more" .index }} {{ $expandLink := printf "%s%d"
 			{{ partial "icon" "location-dot" }}
 		</div>
 		<div
-			class="block blurry p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words"
-			style="height: auto"
+			class="block blurry p-6 rounded-lg shadow-2xl min-w-full ml-6 mb-10 break-words auto-height"
 		>
 			<div class="flex justify-between">
 				<h2
@@ -24,16 +23,10 @@ $more := printf "%s%d" "more" .index }} {{ $expandLink := printf "%s%d"
 					{{ .name }}
 				</h2>
 			</div>
-			<h3
-				class="quick-fade-in-animation"
-				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
-			>
+			<h3 class="quick-fade-in-animation mt-0" style="--delay: {{ $delay2 }}ms">
 				{{ .organization }}
 			</h3>
-			<h4
-				class="quick-fade-in-animation"
-				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
-			>
+			<h4 class="quick-fade-in-animation mt-0" style="--delay: {{ $delay2 }}ms">
 				{{ .start_date }} - {{ .end_date }}
 			</h4>
 			<div class="mb-6">
@@ -46,14 +39,7 @@ $more := printf "%s%d" "more" .index }} {{ $expandLink := printf "%s%d"
 				<div id="contentContainer">
 					<span
 						id="{{$more}}"
-						class="text-sm"
-						style="
-							display: none;
-							padding-top: 1rem;
-							padding-bottom: 1rem;
-							padding-left: 2rem;
-							padding-right: 2rem;
-						"
+						class="text-sm pb-1rem pt-1rem pl-2rem pr-2rem display-none"
 					>
 						{{ .description | safeHTML}}
 					</span>
@@ -68,7 +54,7 @@ $more := printf "%s%d" "more" .index }} {{ $expandLink := printf "%s%d"
 					<a
 						href="javascript:showMore('{{ .index }}', false)"
 						id="{{$collapseLink}}"
-						style="display: none"
+						class="display-none"
 					>
 						△ Hide △
 					</a>

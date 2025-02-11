@@ -46,8 +46,8 @@ false }}
 					</h2>
 					{{ end }} {{ with .Site.Params.Author.headline }}
 					<h3
-						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
-						style="padding-top: 0.5rem; --delay: 150ms"
+						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation pt-2"
+						style="--delay: 150ms"
 					>
 						{{ . | markdownify }}
 					</h3>
@@ -71,7 +71,9 @@ false }}
 						</div>
 						{{ end }}
 					</div>
-					<section class="prose dark:prose-invert">{{ .Content }}</section>
+					<section class="prose dark:prose-invert width100">
+						{{ .Content }}
+					</section>
 				</div>
 			</div>
 		</div>
