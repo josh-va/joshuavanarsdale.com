@@ -113,7 +113,17 @@ textarea.form-control {
 	flex-direction: row;
 }
 
+.education-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 @media (max-width: 800px) {
+	.education-grid {
+		display: grid;
+		grid-template-columns: 1fr
+	}
+
 	.row {
 		flex-direction: column;
 	}

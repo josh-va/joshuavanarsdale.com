@@ -7,7 +7,7 @@ layout: education
 <h2 class="zenLoop text-3xl">
 Industry Certificates
 </h2>
-<div style="display:grid; grid-template-columns: 1fr 1fr">
+<div class="education-grid">
 {{< education_list >}}
 
 </div>
