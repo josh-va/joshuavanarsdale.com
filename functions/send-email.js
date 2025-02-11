@@ -10,7 +10,7 @@ export async function onRequestPost({ request, env }) {
     const captchaResult = await captchaRes.json();
     console.log("hCaptcha response:", hcaptchaResponse);
     if (!captchaResult.success) {
-        return new Response("hCaptcha verification failed", { status: 400 });
+        return new Response("`hCaptcha verification failed: ${JSON.stringify(captchaResult)}", { status: 400 });
     }
     const email = formData.get("email");
     const name = formData.get("name");
