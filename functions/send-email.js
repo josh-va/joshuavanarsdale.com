@@ -1,6 +1,6 @@
 export async function onRequestPost({ request, env }) {
     const formData = await request.formData();
-    const hcaptchaResponse = formData.get("h-captcha-response");
+    const response = formData.get("cf-turnstile-response");
     const secretKey = env.TURNSTILE_SECRET_KEY;
     const verificationUrl = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
         const captchaRes = await fetch(verificationUrl, {
