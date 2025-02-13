@@ -32,21 +32,21 @@ false }}
 					"Author" }}" src="{{ $authorImage.RelPermalink }}" /> {{ end }} {{ end
 					}}
 					<h1
-						class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200 quick-fade-in-animation"
+						class="mb-2 text-4xl text-neutral-800 dark:text-neutral-200 quick-fade-in-animation zenLoop"
 						style="--delay: 50ms"
 					>
 						{{ .Site.Params.Author.name | default .Site.Title }}
 					</h1>
 					{{ with .Site.Params.Author.title }}
 					<h2
-						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
+						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation lightweight"
 						style="--delay: 100ms"
 					>
 						{{ . | markdownify }}
 					</h2>
 					{{ end }} {{ with .Site.Params.Author.headline }}
 					<h3
-						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation"
+						class="mt-0 mb-0 text-neutral-800 dark:text-neutral-300 quick-fade-in-animation lightweight"
 						style="padding-top: 0.5rem; --delay: 150ms"
 					>
 						{{ . | markdownify }}

@@ -13,20 +13,20 @@ $delay2 100}}
 		"
 	>
 		<div>
-			<h2
-				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-2xl"
+			<h3
+				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-2xl lightweight"
 				style="--delay: {{ $delay1 }}ms;"
 			>
 				{{ .name }}
-			</h2>
-			<h3
-				class="mt-0 quick-fade-in-animation text-neutral-400 dark:text-neutral-20000 text-lg"
+			</h3>
+			<h4
+				class="mt-0 quick-fade-in-animation text-neutral-400 dark:text-neutral-20000 text-lg lightweight"
 				style="--delay: {{ $delay2 }}ms;"
 			>
 				{{ .line2 }}
-			</h3>
-			<h4
-				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400"
+			</h4>
+			<h5
+				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 lightweight"
 				style="--delay: {{ $delay3 }}ms;"
 			>
 				{{ .organization }}
@@ -34,7 +34,7 @@ $delay2 100}}
 					>| {{ .issued_date }} {{if .expiry_date }} - {{ .expiry_date }} {{ end
 					}}</span
 				>
-			</h4>
+			</h5>
 		</div>
 	</div>
 </div>

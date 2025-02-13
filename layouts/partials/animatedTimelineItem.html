@@ -18,20 +18,20 @@ $more := printf "%s%d" "more" .index }} {{ $expandLink := printf "%s%d"
 		>
 			<div class="flex justify-between">
 				<h2
-					class="mt-0 quick-fade-in-animation"
+					class="mt-0 quick-fade-in-animation lightweight"
 					style="--delay: {{ $delay1 }}ms"
 				>
 					{{ .name }}
 				</h2>
 			</div>
 			<h3
-				class="quick-fade-in-animation"
+				class="quick-fade-in-animation lightweight"
 				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
 			>
 				{{ .organization }}
 			</h3>
 			<h4
-				class="quick-fade-in-animation"
+				class="quick-fade-in-animation lightweight"
 				style="--delay: {{ $delay2 }}ms;  margin-top: 0"
 			>
 				{{ .start_date }} - {{ .end_date }}
