@@ -74,20 +74,26 @@
 						></textarea>
 					</div>
 					<div
-						class="h-captcha flex justify-center"
-						data-sitekey="71045fd0-431a-4626-8768-c7b408f67c6c"
+						class="cf-turnstile"
+						data-sitekey="0x4AAAAAAA8roGhI76GjYz5-"
 					></div>
-					<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+					<script
+						src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+						async
+						defer
+					></script>
 					<script>
 						document
 							.getElementById("contact")
 							.addEventListener("submit", function (event) {
-								var hcaptchaResponse = document.querySelector(
-									"[name='h-captcha-response']"
+								var response = document.querySelector(
+									"[name='cf-turnstile-response']"
 								)?.value;
 
-								if (!hcaptchaResponse) {
-									alert("Please complete the hCaptcha before submitting.");
+								if (!response) {
+									alert(
+										"Please complete the turnstile challenge before submitting."
+									);
 									event.preventDefault();
 								}
 							});
