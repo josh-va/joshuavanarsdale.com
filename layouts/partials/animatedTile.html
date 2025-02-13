@@ -13,14 +13,14 @@ $delay2 100}}{{ $delay4 := add $delay3 100}}
 		"
 	>
 		<div>
-			<h2
-				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-xl"
+			<h3
+				class="mt-0 mb-2 quick-fade-in-animation text-neutral-500 dark:text-neutral-100 text-xl lightweight"
 				style="--delay: {{ $delay1 }}ms; justify-self: center; text-align: center;"
 			>
 				{{ .name }}
-			</h2>
-			<h3
-				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm"
+			</h3>
+			<h4
+				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm lightweight"
 				style="--delay: {{ $delay2 }}ms; justify-self: center;"
 			>
 				{{ .organization }}
@@ -28,7 +28,7 @@ $delay2 100}}{{ $delay4 := add $delay3 100}}
 					>| {{ .issued_date }} {{if .expiry_date }} - {{ .expiry_date }} {{ end
 					}}</span
 				>
-			</h3>
+			</h4>
 		</div>
 		<div class="mb-6 quick-fade-in-animation" style="--delay: {{ $delay3 }}ms;">
 			<ul>
