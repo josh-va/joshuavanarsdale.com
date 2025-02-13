@@ -21,3 +21,15 @@ weight = 3
 
 [[footer]]
 none = "none"
+
+[[footer]]
+name = "Terms & Conditions"
+pageRef = "terms-and-conditions"
+identifier = "Z4DOTLbDTe"
+weight = 9999
+
+[[footer]]
+name = "Privacy Policy"
+pageRef = "privacy-policy"
+identifier = "zBirKldy3I"
+weight = 9999
