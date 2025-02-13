@@ -2,22 +2,36 @@
 none = "none"
 
 [[main]]
-name = "Career Journey"
-pageRef = "career-journey"
-identifier = "AlDb3FSBlF"
+name = "Posts"
+pageRef = "posts"
+identifier = "posts"
 weight = 1
 
 [[main]]
+name = "About Me"
+pageRef = "#"
+identifier = "about-me"
+weight = 10
+
+[[main]]
+name = "Career Journey"
+parent = "about-me"
+pageRef = "career-journey"
+identifier = "career-journey"
+weight = 11
+
+[[main]]
 name = "Education"
+parent = "about-me"
 pageRef = "education"
-identifier = "zMF1njsQl2"
-weight = 2
+identifier = "education"
+weight = 12
 
 [[main]]
 name = "Contact"
 pageRef = "contact"
-identifier = "pweiP3R1De"
-weight = 3
+identifier = "contact"
+weight = 99
 
 [[footer]]
 none = "none"
@@ -25,11 +39,11 @@ none = "none"
 [[footer]]
 name = "Terms & Conditions"
 pageRef = "terms-and-conditions"
-identifier = "Z4DOTLbDTe"
+identifier = "terms-and-conditions"
 weight = 9999
 
 [[footer]]
 name = "Privacy Policy"
 pageRef = "privacy-policy"
-identifier = "zBirKldy3I"
+identifier = "privacy-policy"
 weight = 9999
