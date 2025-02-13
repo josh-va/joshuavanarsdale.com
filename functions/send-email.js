@@ -1,15 +1,15 @@
 export async function onRequestPost({ request, env }) {
     const formData = await request.formData();
     const hcaptchaResponse = formData.get("h-captcha-response");
-    const secretKey = env.HCAPTCHA_SECRET_KEY;
-    const verificationUrl = "https://api.hcaptcha.com/siteverify";
+    const secretKey = env.TURNSTILE_SECRET_KEY;
+    const verificationUrl = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
         const captchaRes = await fetch(verificationUrl, {
         method: "POST",
-        body: new URLSearchParams({ secret: secretKey, response: hcaptchaResponse }),
+        body: new URLSearchParams({ secret: secretKey, response: cf-turnstile-response }),
     });
     const captchaResult = await captchaRes.json();
     if (!captchaResult.success) {
-        return new Response("hCaptcha verification failed", { status: 400 });
+        return new Response("Turnstile verification failed", { status: 400 });
     }
     const email = formData.get("email");
     const name = formData.get("name");
