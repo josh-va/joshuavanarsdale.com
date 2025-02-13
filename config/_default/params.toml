@@ -14,7 +14,7 @@ defaultFeaturedImage = "profile.jpg"
 smartTOC = ""
 
 [header]
-layout = "fixed-fill-blur"
+layout = "fixed"
 
 [footer]
 showMenu = true
@@ -65,14 +65,14 @@ showHero = false
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
-showSummary = false
+showSummary = true
 showViews = false
 showLikes = false
 showTableOfContents = false
 showCards = false
 orderByWeight = false
 groupByYear = false
-cardView = false
+cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = true
 
