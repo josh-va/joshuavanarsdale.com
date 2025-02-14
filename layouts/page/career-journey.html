@@ -49,7 +49,9 @@
 		{{ if .Params.showBreadcrumbs | default
 		(.Site.Params.article.showBreadcrumbs | default false) }} {{ partial
 		"breadcrumbs.html" . }} {{ end }}
-		<h1 class="mt-0 text-4xl text-neutral-900 dark:text-neutral">
+		<h1
+			class="mt-0 text-4xl text-neutral-900 dark:text-neutral quick-fade-in-animation"
+		>
 			{{ .Title | emojify }}
 		</h1>
 	</header>
