@@ -1,5 +1,6 @@
-{{ $delay1 := mul .index 100}} {{ $delay2 := add $delay1 100}} {{ $delay3 := add
-$delay2 100}}{{ $delay4 := add $delay3 100}}
+{{ $delaymul := mul .index 100}} {{ $delay1 := add $delaymul (.initialDelay |
+int) }} {{ $delay2 := add $delay1 50}} {{ $delay3 := add $delay2 50}}{{ $delay4
+:= add $delay3 50}}
 
 <div class="flex" style="height: auto; width: 100%">
 	<div
