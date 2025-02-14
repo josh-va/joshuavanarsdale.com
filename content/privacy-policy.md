@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "IT Solutions Specialist | Streamlined Tech | Empowered Teams | Secured Solutions"
+description: "Joshua Van Arsdale | IT Solutions Specialist"
 layout: simple
 ---
 
