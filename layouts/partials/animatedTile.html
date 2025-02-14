@@ -1,5 +1,6 @@
-{{ $delay1 := mul .index 100}} {{ $delay2 := add $delay1 100}} {{ $delay3 := add
-$delay2 100}}{{ $delay4 := add $delay3 100}}
+{{ $delaymul := mul .index 100}} {{ $delay1 := add $delaymul (.initialDelay |
+int) }} {{ $delay2 := add $delay1 50}} {{ $delay3 := add $delay2 50}}{{ $delay4
+:= add $delay3 50}}
 
 <div class="flex" style="height: auto; width: 100%">
 	<div
@@ -20,11 +21,11 @@ $delay2 100}}{{ $delay4 := add $delay3 100}}
 				{{ .name }}
 			</h3>
 			<h4
-				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm lightweight"
+				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm"
 				style="--delay: {{ $delay2 }}ms; justify-self: center;"
 			>
 				{{ .organization }}
-				<span class="text-neutral-500 dark:text-neutral-100"
+				<span class="text-neutral-500 dark:text-neutral-100 lightweight"
 					>| {{ .issued_date }} {{if .expiry_date }} - {{ .expiry_date }} {{ end
 					}}</span
 				>
@@ -44,7 +45,7 @@ $delay2 100}}{{ $delay4 := add $delay3 100}}
 			<span
 				class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
 			>
-				<a href="{{ .link }}" target="_blank">Link to Certificate </a>
+				<a href="{{ .link }}" target="_blank">Certificate</a>
 			</span>
 		</span>
 	</div>

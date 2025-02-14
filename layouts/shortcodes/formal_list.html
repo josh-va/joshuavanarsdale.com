@@ -1,1 +1,13 @@
-{{ partial "education/formal_list.html" (dict "site" .Site) }}
+{{ $initialDelay := site.Data.education.education | len | add 1 | mul 100 }} {{
+$listDelay := $initialDelay | add 50 }}
+
+<h2
+	class="lightweight quick-fade-in-animation"
+	style="--delay: {{ $initialDelay }}ms;"
+>
+	University Degrees
+</h2>
+<div>
+	{{ partial "education/formal_list.html" (dict "site" .Site "initialDelay"
+	($listDelay | int)) }}
+</div>

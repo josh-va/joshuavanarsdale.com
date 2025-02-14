@@ -1,1 +1,7 @@
-{{ partial "education/education_list.html" (dict "site" .Site) }}
+<h2 class="lightweight quick-fade-in-animation" style="--delay: 50ms">
+	Industry Certificates
+</h2>
+<div class="education-grid">
+	{{ partial "education/education_list.html" (dict "site" .Site "initialDelay"
+	(100)) }}
+</div>

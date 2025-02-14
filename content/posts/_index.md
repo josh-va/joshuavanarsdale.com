@@ -1,6 +1,6 @@
 ---
 title: "Posts"
-description: "a description"
+description: "Joshua Van Arsdale | IT Solutions Specialist"
 layout: list
 showSummary: true
 ---

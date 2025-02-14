@@ -1,5 +1,6 @@
-{{ $delay1 := mul .index 100}} {{ $delay2 := add $delay1 100}} {{ $delay3 := add
-$delay2 100}} {{ $delay4 := add $delay3 100}}
+{{ $delaymul := mul .index 100}} {{ $delay1 := add $delaymul (.initialDelay |
+int) }} {{ $delay2 := add $delay1 50}} {{ $delay3 := add $delay2 50}}{{ $delay4
+:= add $delay3 50}}
 
 <div class="flex" style="height: auto; width: 100%">
 	<div
@@ -14,7 +15,7 @@ $delay2 100}} {{ $delay4 := add $delay3 100}}
 	>
 		<div>
 			<h2
-				class="mt-0 mb-2 quick-fade-in-animation-disabled text-neutral-500 dark:text-neutral-100 text-xl"
+				class="mt-0 mb-2 quick-fade-in-animation-disabled text-neutral-500 dark:text-neutral-100 text-xl lightweight"
 				style="--delay: {{ $delay1 }}ms; justify-self: center; text-align: center;"
 			>
 				{{ .name }}
@@ -24,7 +25,7 @@ $delay2 100}} {{ $delay4 := add $delay3 100}}
 				style="--delay: {{ $delay2 }}ms; justify-self: center;"
 			>
 				{{ .organization }}
-				<span class="text-neutral-300 dark:text-neutral-100"
+				<span class="text-neutral-300 dark:text-neutral-100 lightweight"
 					>| {{ .issued_date }} {{if .expiry_date }} - {{ .expiry_date }} {{ end
 					}}</span
 				>
