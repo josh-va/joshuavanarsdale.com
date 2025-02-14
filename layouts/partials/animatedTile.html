@@ -20,11 +20,11 @@ $delay2 100}}{{ $delay4 := add $delay3 100}}
 				{{ .name }}
 			</h3>
 			<h4
-				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm lightweight"
+				class="mt-0 quick-fade-in-animation text-primary-600 dark:text-primary-400 text-sm"
 				style="--delay: {{ $delay2 }}ms; justify-self: center;"
 			>
 				{{ .organization }}
-				<span class="text-neutral-500 dark:text-neutral-100"
+				<span class="text-neutral-500 dark:text-neutral-100 lightweight"
 					>| {{ .issued_date }} {{if .expiry_date }} - {{ .expiry_date }} {{ end
 					}}</span
 				>
