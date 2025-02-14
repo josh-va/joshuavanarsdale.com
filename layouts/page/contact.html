@@ -2,14 +2,16 @@
 <article class="max-w-full">
 	<header>
 		<h1
-			class="text-4xl text-neutral-900 dark:text-neutral animated-text mt-0 mb-0"
+			class="text-4xl text-neutral-900 dark:text-neutral quick-fade-in-animation mt-0 mb-0"
 		>
 			{{ .Title | emojify }}
 		</h1>
 	</header>
 	<div class="row">
 		<div class="contact-column-left">
-			<section class="max-w-full mt-0 prose dark:prose-invert">
+			<section
+				class="max-w-full mt-0 prose dark:prose-invert contact-body quick-fade-in-animation"
+			>
 				{{ .Content }}
 			</section>
 		</div>
@@ -26,7 +28,7 @@
 					method="POST"
 				>
 					<input type="hidden" name="form-name" value="contact" />
-					<div class="form-group animated-text">
+					<div class="form-group quick-fade-in-animation">
 						<label class="col-md-12 control-label" for="name"></label>
 						<input
 							id="name"
@@ -38,7 +40,7 @@
 							autocomplete="off"
 						/>
 					</div>
-					<div class="form-group animated-text">
+					<div class="form-group quick-fade-in-animation">
 						<label class="col-md-12 control-label" for="email"></label>
 						<input
 							id="email"
@@ -50,7 +52,7 @@
 							autocomplete="off"
 						/>
 					</div>
-					<div class="form-group animated-text">
+					<div class="form-group quick-fade-in-animation">
 						<label class="col-md-12 control-label" for="subject"></label>
 						<input
 							id="subject"
@@ -62,7 +64,7 @@
 							autocomplete="off"
 						/>
 					</div>
-					<div class="form-group animated-text">
+					<div class="form-group quick-fade-in-animation">
 						<label class="col-md-12 control-label" for="message"></label>
 						<textarea
 							class="form-control"
@@ -98,7 +100,7 @@
 								}
 							});
 					</script>
-					<div class="form-group animated-text">
+					<div class="form-group quick-fade-in-animation">
 						<button
 							role="button"
 							href="#"
