@@ -101,28 +101,3 @@ Beyond technical responsibilities, I also provided in-house training and upskill
         {icon = "up-right-dots", text = "Workplace Modernization"},
         {icon = "people", text = "Community Sector"},
     ]
-
-[[career]]
-    name = "Business Operations Officer"
-    start_date = "Oct '15"
-    end_date = "Jul '17"
-    organization = "Western Sydney Community Forum"
-    location = "Parramatta, NSW, Australia"
-    highlights = [
-        "Championed data protection by designing a GDPR compliance strategy that met regulatory standards.",
-        "Improved operational efficiency by automating sales reporting, saving 8 hours a week.",
-        "Developed KPI reporting displays to improve performance tracking and target progress.",
-    ]
-    description = """
-I worked closely with the Western Sydney Community Forum executive team to develop both the IT and Business Operations portfolios, as well as provide technical support and systems administration. My role focused on improving the overall IT infrastructure and driving modernization efforts, ensuring that staff felt empowered and confident in utilizing technology in their daily work.<br><br>
-One highlight was redeveloping the company website to bring its management in-house, providing greater control and flexibility over content updates and maintenance. I also led the rapid transition from an on-premises Exchange server to Exchange Online after a critical hardware failure, ensuring minimal disruption to operations.<br><br>
-I managed Active Directory, Exchange Online, and Office365 administration, user lifecycle provisioning, and day-to-day resolution of IT issues for staff and clients. Additionally, I implemented a data backup and recovery strategy to enhance the organization's security posture, ensuring that critical data was protected and easily recoverable in case of an incident.<br><br>
-Beyond technical responsibilities, I also provided in-house training and upskilling to staff and clients, empowering them to better utilize new and existing IT solutions. I also served as a technical advisor to the executive team, ensuring that projects were supported by appropriate IT infrastructure.
-    """
-    keywords = [
-        {icon = "computer", text = "Technical Support"},
-        {icon = "repeat", text = "Backup & Recovery"},
-        {icon = "internet", text = "Website Development"},
-        {icon = "up-right-dots", text = "Workplace Modernization"},
-        {icon = "people", text = "Community Sector"},
-    ]
