@@ -31,6 +31,15 @@ h6 {
 	font-weight: 600;
 }
 
+.align-center {
+	text-align: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+
 html {
 	font-family: openSans;
 	font-weight: 300;
@@ -365,6 +374,5 @@ ul {
 	--tw-prose-invert-pre-bg: rgba(var(--color-neutral-700), 1);
 	--tw-prose-invert-th-borders: rgba(var(--color-neutral-500), 1);
 	--tw-prose-invert-td-borders: rgba(var(--color-neutral-700), 1);
-	font-size: 1rem;
 	line-height: 1.75
 }
