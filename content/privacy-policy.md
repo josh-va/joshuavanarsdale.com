@@ -42,4 +42,4 @@ Users concerned about privacy can contact the Website owner via the contact form
 
 This Privacy Policy may be updated periodically. Continued use of the Website constitutes acceptance of any changes.
 
-If you have any questions about these Terms and Conditions or Privacy Policy, please contact [Insert Contact Email].
+If you have any questions about these Terms and Conditions or Privacy Policy, please contact <!--email_off-->webmaster@joshuavanarsdale.com<!--/email_off-->.
